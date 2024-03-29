@@ -291,7 +291,7 @@ header nav .share_list li:hover {
     border-radius: 0;
     bottom: 0;
     left: 0;
-    width: 5px;
+    width: 0;
     height: 0.2em;
     background-color: #4F83C2;
     opacity: 0;
