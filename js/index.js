@@ -84,7 +84,6 @@ $(function() {
         $(".projects .project_type_list li[data-type="+tag+"]").click();
     }
 
-    AOS.init();
 
     
 });

@@ -1,0 +1,47 @@
+$pc-s:769px;
+$pc-m:1040px;
+$pc-l:1200px;
+$pc-max:1450px;
+
+
+
+//pc-s
+ @mixin pc-s() {
+    @media all and (min-width: $pc-s) {
+        @content;
+    }
+}
+//pc-m
+ @mixin pc-m() {
+    @media all and (min-width:$pc-m) {
+        @content;
+    }
+}
+//pc-l
+ @mixin pc-l() {
+    @media all and (min-width: $pc-l) {
+        @content;
+    }
+}
+//pc-max
+@mixin pc-max() {
+    @media all and (min-width: $pc-max) {
+        @content;
+    }
+}
+
+
+@mixin RWD-font-size($s,$m,$l,$max){
+    @include pc-s {
+        font-size: $s;
+    }
+    @include pc-m {
+        font-size: $m;
+    }
+    @include pc-l {
+        font-size: $l;
+    }
+    @include pc-max {
+        font-size: $max;
+    }
+}

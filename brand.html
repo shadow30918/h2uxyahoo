@@ -13,11 +13,11 @@
 	<!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/reset.min.css">
 	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/brand.css">
     <link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="css/swiper-bundle.min.css"/>
 
-	<link rel="icon" href="img/favicon.png" type="image/x-icon" />
+	<link rel="icon" href="img/2024logo.png" type="image/x-icon" />
 
 	<!-- js -->
 	<script src="js/jquery-3.7.1.min.js"></script>
@@ -86,9 +86,8 @@
         
     </section>
 
-    
-    <section class="comming_soon">
-        <div class="bg_item">
+    <section class="category first_section">
+        <div class="bg_item basic">
             <div class="tree_b _01"><img src="img/item/tree_big.svg" data-aos="fade-left" data-aos-delay="200"></div>
             <div class="tree_b _02"><img src="img/item/tree_big.svg"></div>
             <div class="tree_s _01"><img src="img/item/tree_small.svg"></div>
@@ -98,11 +97,22 @@
             <div class="cloud _01"><img src="img/item/Cloud.svg"></div>
         </div>
         <div class="inner">
-            <div class="cm_bobo"><img src="img/comingsoon_bubble.svg" alt="comming soon"></div>
-            <div class="cm_rob"><img src="img/comming_soon_robot.svg"></div>
+            <div class="title"><div class="icon"><img src="img/item/search_icon.svg"></div><div class="caption">品牌類別選單</div></div>
+            <div class="title_mask">
+                <ul class="category_list">
+                    
+                </ul>
+            </div>
         </div>
     </section>
 
+    <section class="page_container">
+        <div class="grass"><img src="img/brand/grass.svg"></div>
+        <div class="robot"><img src="img/comming_soon_robot.svg"></div>        
+    </section>
+    
+
+    
 
 
     <footer >
@@ -115,7 +125,8 @@
     </footer>
     
 
-    </script>
+    <script src="json/article_category.json"></script>
+    <script src="js/brand.js"></script>
 </body>
 
 </html>

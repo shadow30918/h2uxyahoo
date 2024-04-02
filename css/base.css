@@ -12,6 +12,9 @@ html {
   font-family: "Noto Sans TC", "Roboto", sans-serif;
   font-size: 2.5vw;
   font-weight: 300;
+  --purple: #4F83C2;
+  --green_dark: #018139;
+  --green_lite: #9CCD5A;
 }
 @media all and (min-width: 769px) {
   html {
@@ -52,7 +55,7 @@ html body {
   width: 100%;
 }
 html body:has(.comming_soon) {
-  background-color: #0E8347;
+  background-color: var(--green_dark);
 }
 @media screen and (max-width: 1039px) {
   html body:has(.hem.open) {
@@ -150,7 +153,7 @@ header nav .share_list li:hover {
     height: 0.7em;
     bottom: 0.5em;
     right: 0em;
-    background-color: #4F83C2;
+    background-color: var(--purple);
     clip-path: polygon(0 0, 100% 0, 50% 60%);
     transform: rotate(0);
   }
@@ -217,9 +220,9 @@ header nav .share_list li:hover {
   }
   header nav .nav_list .nav_item.active {
     border: 0;
-    border-bottom: 3px solid #4F83C2;
+    border-bottom: 3px solid var(--purple);
     background-color: transparent;
-    color: #4F83C2;
+    color: var(--purple);
   }
   header nav .nav_list .nav_item.collapse_list > a {
     display: block;
@@ -251,7 +254,7 @@ header nav .share_list li:hover {
     padding: 1em 2em;
     background-color: #fff;
     border-radius: 1em;
-    border: 3px solid #4F83C2;
+    border: 3px solid var(--purple);
   }
   header nav .nav_list .nav_item.collapse_list .sub_list .history_list .history_link {
     padding: 1em;
@@ -269,7 +272,7 @@ header nav .share_list li:hover {
     top: 0;
     left: 3em;
     transform: translateY(-100%);
-    background-color: #4F83C2;
+    background-color: var(--purple);
     clip-path: polygon(0% 30%, 100% 100%, 0 100%);
   }
   header nav .nav_list .nav_item.collapse_list:hover > a::after {
@@ -293,7 +296,7 @@ header nav .share_list li:hover {
     left: 0;
     width: 0;
     height: 0.2em;
-    background-color: #4F83C2;
+    background-color: var(--purple);
     opacity: 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
@@ -332,7 +335,7 @@ header .hem::before, header .hem:after {
   width: 80%;
   height: 0.2em;
   border-radius: 99em;
-  background-color: #4F83C2;
+  background-color: var(--purple);
   left: 10%;
   top: 25%;
 }
@@ -400,7 +403,7 @@ header.show.scroll .logo {
 
 footer {
   position: relative;
-  background-color: #0E8347;
+  background-color: var(--green_dark);
   color: #fff;
   padding: 3em 0;
   text-align: center;
@@ -424,17 +427,232 @@ section .section_title {
   font-weight: 500;
   text-transform: uppercase;
 }
-section > .inner {
+section .inner {
   width: 90%;
   margin: 0 auto;
 }
 @media all and (min-width: 1040px) {
-  section > .inner {
+  section .inner {
     width: 80%;
   }
 }
 section .overflow {
   overflow: hidden;
+}
+
+.kv {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #C6ECF4 0%, #F1F3E4 100%);
+}
+.kv .overflow_area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  overflow: hidden;
+}
+.kv .overflow_area .cloud {
+  position: absolute;
+  top: 105%;
+  width: 250vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate 60s infinite linear reverse;
+}
+@media all and (min-width: 1040px) {
+  .kv .overflow_area .cloud {
+    min-width: 1200px;
+    width: 350vh;
+    top: 125%;
+  }
+}
+.kv .earth {
+  position: absolute;
+  aspect-ratio: 1/1;
+  background: url("../img/index/earth_1.svg");
+  animation: rotate 30s infinite linear;
+  width: 100vh;
+  top: 105%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.kv .earth::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url("../img/texture_100.png") left top repeat;
+  mask: url("../img/index/earth_1.svg") no-repeat center center;
+  mix-blend-mode: multiply;
+}
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@media all and (min-width: 1040px) {
+  .kv .earth {
+    min-width: 1200px;
+    width: 170vh;
+    top: 125%;
+  }
+}
+.kv .h_title {
+  display: none;
+}
+.kv .inner {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50vh;
+  max-width: 100%;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.kv .inner .logo_2024 {
+  order: 1;
+  width: 60%;
+}
+.kv .inner .logo_2024 img {
+  animation: float 1.5s ease-in-out alternate infinite;
+}
+.kv .inner .word {
+  order: 0;
+  margin-bottom: 10%;
+  width: 80%;
+}
+.kv .inner .word .award_2024_9th {
+  opacity: 0;
+  --hz: 5%;
+  animation: moveup 1s ease-in-out alternate both, float 1s ease-out 0.2s alternate-reverse infinite;
+}
+.kv .inner .word .main_title {
+  opacity: 0;
+  --hz: 1.5%;
+  animation: moveup 1s ease-in-out 0.3s alternate both, float 1s ease-out alternate-reverse infinite;
+}
+@keyframes moveup {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateY(var(--hz, 5%));
+  }
+  100% {
+    transform: translateY(calc(var(--hz, 5%) * -1));
+  }
+}
+@media all and (min-width: 1040px) {
+  .kv .inner {
+    top: 35%;
+    width: 100vh;
+    max-width: 80%;
+    transform: translate(-53%, -50%);
+  }
+  .kv .inner .logo_2024 {
+    order: 0;
+    width: 40%;
+  }
+  .kv .inner .word {
+    margin-bottom: 0;
+    order: 1;
+    width: 60%;
+  }
+}
+.kv .grass {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  bottom: -3vh;
+  height: 50vh;
+  overflow: hidden;
+}
+.kv .grass .g_L {
+  position: absolute;
+  width: 30vh;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.kv .grass .g_R {
+  position: absolute;
+  width: 30vh;
+  right: 0%;
+  bottom: 0;
+  transform: translateX(50%);
+}
+@media all and (min-width: 1040px) {
+  .kv .grass {
+    bottom: -7vh;
+  }
+  .kv .grass .g_L {
+    width: 80vh;
+  }
+  .kv .grass .g_R {
+    width: 80vh;
+  }
+}
+.kv.sub {
+  height: auto;
+  aspect-ratio: 1/1;
+}
+.kv.sub .earth {
+  width: 100%;
+}
+@media all and (min-width: 1040px) {
+  .kv.sub .earth {
+    width: 80%;
+    min-width: auto;
+    top: 150%;
+  }
+}
+.kv.sub .cloud {
+  width: 220%;
+}
+@media all and (min-width: 1040px) {
+  .kv.sub .cloud {
+    width: 150%;
+    top: 150%;
+  }
+}
+.kv.sub .inner {
+  width: 100%;
+}
+.kv.sub .inner .sub_kv_title {
+  height: 5em;
+}
+.kv.sub .inner .sub_kv_title img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media all and (min-width: 769px) {
+  .kv.sub .inner .sub_kv_title {
+    max-width: 80%;
+    height: 15vw;
+  }
+}
+@media all and (min-width: 1040px) {
+  .kv.sub {
+    aspect-ratio: 3/1;
+  }
+  .kv.sub .inner .sub_kv_title {
+    height: 5em;
+  }
 }
 
 .video {
@@ -487,4 +705,187 @@ section .overflow {
 }
 .video .mask .pause {
   display: none;
+}
+
+.comming_soon {
+  overflow: hidden;
+  padding: 40% 0% 0%;
+  background-color: var(--green_lite);
+  mask: url("../img/index/banner/background_grass.svg") no-repeat top center/cover;
+  margin-top: -5%;
+}
+.comming_soon:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: url("../img/texture_100.png") top left/100px;
+  mix-blend-mode: multiply;
+}
+.comming_soon .bg_item {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.comming_soon .bg_item > div {
+  position: absolute;
+}
+.comming_soon .bg_item .robot {
+  width: 6%;
+  bottom: 7%;
+  left: 21%;
+  z-index: 3;
+}
+.comming_soon .bg_item .grass_s._01 {
+  width: 5%;
+  bottom: 5%;
+  left: 22%;
+  z-index: 4;
+}
+.comming_soon .bg_item .tree_b._01 {
+  width: 3%;
+  bottom: 10%;
+  right: 23%;
+  z-index: 3;
+}
+.comming_soon .bg_item .tree_b._02 {
+  width: 2%;
+  top: 40%;
+  left: 13%;
+  z-index: 3;
+}
+.comming_soon .bg_item .tree_s._01 {
+  width: 2.5%;
+  top: 35%;
+  right: 5%;
+}
+.comming_soon .bg_item .tree_y._01 {
+  width: 3%;
+  top: 25%;
+  left: 3%;
+}
+.comming_soon .bg_item .tree_y._02 {
+  width: 1.7%;
+  top: 23%;
+  right: 25%;
+}
+.comming_soon .bg_item .cloud._01 {
+  width: 3%;
+  bottom: 15%;
+  right: 15%;
+}
+.comming_soon .inner {
+  position: relative;
+}
+.comming_soon .inner .cm_bobo {
+  position: absolute;
+  width: 60%;
+  top: -30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.comming_soon .inner .cm_rob {
+  width: 40%;
+  margin: 0 auto -10%;
+}
+@media all and (min-width: 1040px) {
+  .comming_soon {
+    padding: 20% 0% 0%;
+  }
+  .comming_soon .inner {
+    position: relative;
+  }
+  .comming_soon .inner .cm_bobo {
+    position: absolute;
+    width: 40%;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .comming_soon .inner .cm_rob {
+    width: 20%;
+    margin: 0 auto -3%;
+  }
+}
+
+.first_section {
+  overflow: hidden;
+  padding: 15% 0 20%;
+  background-color: var(--green_lite);
+  mask: url("../img/item/background_grass_mb.svg") no-repeat top center/cover;
+  margin-top: -5%;
+}
+.first_section:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: url("../img/texture_100.png") top left/100px;
+  mix-blend-mode: multiply;
+}
+.first_section .bg_item.basic {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.first_section .bg_item.basic > div {
+  position: absolute;
+}
+.first_section .bg_item.basic .robot {
+  width: 6%;
+  bottom: 7%;
+  left: 21%;
+  z-index: 3;
+}
+.first_section .bg_item.basic .grass_s._01 {
+  width: 5%;
+  bottom: 5%;
+  left: 22%;
+  z-index: 4;
+}
+.first_section .bg_item.basic .tree_b._01 {
+  width: 3%;
+  bottom: 10%;
+  right: 23%;
+  z-index: 3;
+}
+.first_section .bg_item.basic .tree_b._02 {
+  width: 2%;
+  top: 40%;
+  left: 13%;
+  z-index: 3;
+}
+.first_section .bg_item.basic .tree_s._01 {
+  width: 2.5%;
+  top: 35%;
+  right: 5%;
+}
+.first_section .bg_item.basic .tree_y._01 {
+  width: 3%;
+  top: 25%;
+  left: 3%;
+}
+.first_section .bg_item.basic .tree_y._02 {
+  width: 1%;
+  top: 10%;
+  right: 30%;
+}
+.first_section .bg_item.basic .cloud._01 {
+  width: 3%;
+  bottom: 15%;
+  right: 15%;
+}
+@media all and (min-width: 769px) {
+  .first_section {
+    padding: 12% 0 12%;
+    mask: url("../img/index/banner/background_grass.svg") no-repeat top center/cover;
+  }
 }

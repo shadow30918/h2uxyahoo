@@ -5,19 +5,20 @@ let page_path = location.pathname;
 
 
 
+
+
 $(function() {
+
+    
+    AOS.init();
 
     page_name = page_path.split(".")[0].split("/").pop()
     $("nav .nav_item[caption="+page_name+"]").addClass("active")
 
     $(".nav_item").hover(function(){
-
         origin_X = $(".nav_list").offset().left;
-        
         this_X = $(this).offset().left;
-
         this_w = $(this).innerWidth();
-
         $(".underLine").css({"left":this_X-origin_X,"width":this_w})
     })
 

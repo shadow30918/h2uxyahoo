@@ -1,0 +1,56 @@
+[
+    {
+        "id":"promotion",
+        "caption":"健康推廣大使",
+        "icon":"promotion.svg",
+        "amount": 0
+    },
+    {
+        "id":"tech",
+        "caption":"健康科技類",
+        "icon":"tech.svg",
+        "amount": 0
+    },
+    {
+        "id":"sale",
+        "caption":"零售通路類",
+        "icon":"sale.svg",
+        "amount": 0
+    },
+    {
+        "id":"health",
+        "caption":"醫療保健類",
+        "icon":"health.svg",
+        "amount": 24
+    },
+    {
+        "id":"equipment",
+        "caption":"保健醫療器材",
+        "icon":"equipment.svg",
+        "amount": 20
+    },
+    {
+        "id":"nutrition",
+        "caption":"營養補充品類",
+        "icon":"nutrition.svg",
+        "amount": 55
+    },
+    {
+        "id":"food",
+        "caption":"食品飲品類",
+        "icon":"food.svg",
+        "amount": 45
+    },
+    {
+        "id":"sports",
+        "caption":"運動類",
+        "icon":"sports.svg",
+        "amount": 0
+    },
+    {
+        "id":"makeup",
+        "caption":"生活用品暨美妝類",
+        "icon":"makeup.svg",
+        "amount": 51
+    }
+]
