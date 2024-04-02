@@ -298,7 +298,7 @@
 .page_container .page .brand_pro .inner .pro_list .list_item .content .link:hover {
   background-color: var(--green_dark);
   color: #fff;
-  transform: translateY(50%) scale(1.05);
+  transform: scale(1.05);
 }
 .page_container .page .paticipants {
   position: relative;
