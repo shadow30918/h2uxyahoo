@@ -96,7 +96,9 @@ $(function(){
     
             AOS.init();
             $(".category_item:first-child").addClass("active")
-            $(".category_item").addClass("show")
+            setTimeout(function(){
+                $(".category_item").addClass("show");
+            },0)
             setTimeout(function(){
                 $(".category_item").addClass("final")
             },1500)
@@ -151,9 +153,8 @@ function brand_pro_layout (data,category,index){
             </div>
             <div class="content"  data-aos="fade-up" data-aos-anchor-placement="top-bottom"  data-aos-offset="${win_H/10}" data-aos-duration="1500" data-aos-delay="0">
                 <div class="tag">${category["caption"]}</div>
-                <div class="caption"><h3>${data["caption"]}</h3></div>
+                <div class="caption"><a href="${data["link"]}"><h3>${data["caption"]}</h3></a></div>
                 <div class="discribtion">${data["dtl"]}</div>
-                <div class="link"><a href="${data["link"]}">前往品牌官網</a></div>
             </div>
         </li>
         `

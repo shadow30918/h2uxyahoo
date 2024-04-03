@@ -13,7 +13,8 @@ $(function() {
     AOS.init();
 
     page_name = page_path.split(".")[0].split("/").pop()
-    $("nav .nav_item[caption="+page_name+"]").addClass("active")
+    page_name = (page_name=="")?"index":page_name;
+    $("nav .nav_item[caption='"+page_name+"']").addClass("active")
 
     $(".nav_item").hover(function(){
         origin_X = $(".nav_list").offset().left;

@@ -1,22 +1,27 @@
 [
     {
-        "id":"c001",
-        "caption":"醫療保健"
+        "id":"health",
+        "caption":"醫療保健",
+        "icon":"health.svg"
     },
     {
-        "id":"c002",
-        "caption":"飲食營養"
+        "id":"nutrition",
+        "caption":"飲食營養",
+        "icon":"nutrition.svg"
     },
     {
-        "id":"c003",
-        "caption":"生活美妝"
+        "id":"makeup",
+        "caption":"生活美妝",
+        "icon":"makeup.svg"
     },
     {
-        "id":"c004",
-        "caption":"運動健身"
+        "id":"sports",
+        "caption":"運動健身",
+        "icon":"sports.svg"
     },
     {
-        "id":"c005",
-        "caption":"資訊科技"
+        "id":"tech",
+        "caption":"資訊科技",
+        "icon":"tech.svg"
     }
 ]
