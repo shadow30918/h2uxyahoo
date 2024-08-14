@@ -1216,7 +1216,7 @@
   .award_wall .inner .award_category#award_promotion .award_sub_category .rank > li.gold {
     order: 0;
     width: 100%;
-    padding: 0 30%;
+    padding: 0 35%;
   }
   .award_wall .inner .award_category#award_promotion .award_sub_category .rank > li.bronze {
     order: 2;
