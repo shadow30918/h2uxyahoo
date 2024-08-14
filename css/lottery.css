@@ -1,0 +1,601 @@
+.red_word {
+  color: var(--red_word);
+  font-weight: 500;
+}
+
+.inner .title_icon {
+  width: 40%;
+  margin: 0 auto;
+}
+.inner .title {
+  margin: 1em auto;
+}
+.inner .title h2 {
+  font-size: 3em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 1.3;
+  color: #fff;
+  text-align: center;
+}
+.inner .title h2 br {
+  display: none;
+}
+@media all and (min-width: 769px) {
+  .inner .title h2 br {
+    display: block;
+  }
+}
+@media all and (min-width: 769px) {
+  .inner .title_icon {
+    width: 20%;
+  }
+}
+
+.method .inner {
+  position: relative;
+  overflow: hidden;
+  padding: 15% 5% 0;
+  width: 100%;
+}
+@media all and (min-width: 769px) {
+  .method .inner {
+    width: 70%;
+    padding: 7% 0 0;
+  }
+}
+@media all and (min-width: 1040px) {
+  .method .inner {
+    width: 80%;
+    padding: 10% 0 0;
+  }
+}
+.method .inner .title h2 {
+  color: var(--green_dark);
+}
+.method .inner .pad {
+  position: relative;
+  z-index: 5;
+  aspect-ratio: 163/240;
+  background: url("../img/lottery/pad_m.svg") no-repeat center center/contain;
+  padding: 15% 8%;
+}
+@media all and (min-width: 769px) {
+  .method .inner .pad {
+    padding: 20% 8%;
+  }
+}
+@media all and (min-width: 1040px) {
+  .method .inner .pad {
+    aspect-ratio: 109/74;
+    background: url("../img/lottery/pad.svg") no-repeat center center/contain;
+    padding: 5% 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media all and (min-width: 1450px) {
+  .method .inner .pad {
+    width: 90%;
+    padding: 5% 15%;
+  }
+}
+.method .inner .pad .list {
+  margin-top: 2em;
+}
+.method .inner .pad .list .list_item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
+  font-weight: 400;
+}
+.method .inner .pad .list .list_item .caption {
+  padding: 0.3em 1em;
+  border-radius: 99em;
+  background-color: var(--green_lite);
+  color: #fff;
+  width: 6.5em;
+  font-size: 1.3em;
+}
+.method .inner .pad .list .list_item .dtl {
+  width: calc(100% - 6.5em);
+  margin-top: 0.3em;
+  font-size: 1.3em;
+  line-height: 1.3;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.method .inner .pad .list .list_item ~ .list_item {
+  margin-top: 1em;
+}
+@media all and (min-width: 769px) {
+  .method .inner .pad .list {
+    width: 90%;
+    margin: 10% auto 12%;
+  }
+  .method .inner .pad .list .list_item {
+    font-size: 1.3em;
+  }
+  .method .inner .pad .list .list_item ~ .list_item {
+    margin-top: 6%;
+  }
+}
+@media all and (min-width: 1040px) {
+  .method .inner .pad .list {
+    width: auto;
+    margin: 2em auto;
+  }
+  .method .inner .pad .list .list_item {
+    font-size: inherit;
+  }
+  .method .inner .pad .list .list_item ~ .list_item {
+    margin-top: 1em;
+  }
+}
+.method .inner .pad .CTA_btn {
+  cursor: pointer;
+  width: 80%;
+  margin: 1em auto;
+  padding: 0.7em;
+  border-radius: 99em;
+  color: #fff;
+  background-color: var(--purple);
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-align: center;
+  transition: all 0.2s ease-out;
+  box-shadow: 0 0 0 rgba(18, 12, 2, 0.3);
+}
+.method .inner .pad .CTA_btn .arrow {
+  position: relative;
+  display: inline-block;
+  width: 0.45em;
+  height: 1em;
+  vertical-align: middle;
+  transition: right 0.3s ease-out;
+  right: 0;
+  animation: flash 0.5s ease-in-out alternate-reverse infinite;
+}
+@keyframes flash {
+  0% {
+    opacity: 0.5;
+    transform: translateX(0%) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(20%) scale(1.1);
+  }
+}
+.method .inner .pad .CTA_btn:hover {
+  background-color: var(--green_dark);
+  transform: scale(1.05) translateY(-0.2em);
+  box-shadow: 0 0.2em 0 -0.05em rgba(214, 206, 89, 0.7);
+}
+.method .inner .pad .CTA_btn:hover .arrow {
+  right: -0.5em;
+}
+@media all and (min-width: 769px) {
+  .method .inner .pad .CTA_btn {
+    width: 85%;
+    font-size: 3em;
+  }
+}
+@media all and (min-width: 1040px) {
+  .method .inner .pad .CTA_btn {
+    width: 80%;
+    font-size: 3em;
+    margin: 0.5em auto;
+  }
+}
+
+.lottery {
+  position: relative;
+  margin-top: -20%;
+  padding: 25% 0 40%;
+}
+.lottery .bg_item {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: -4%;
+  left: 0;
+}
+.lottery .bg_item > div {
+  position: absolute;
+}
+.lottery .bg {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.lottery .bg:before, .lottery .bg:after {
+  position: absolute;
+  content: "";
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  width: 300%;
+  top: 0;
+  left: -100%;
+  background-color: #F5F3B2;
+}
+.lottery .bg:after {
+  background: url("../img/texture_100.png") top left/100px;
+  mix-blend-mode: multiply;
+}
+.lottery .mountain {
+  position: absolute;
+  width: 100%;
+  bottom: -1px;
+}
+.lottery .inner {
+  position: relative;
+  z-index: 5;
+  padding: 0 0 10%;
+  overflow: hidden;
+}
+.lottery .inner .container .lottery_detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5%;
+}
+.lottery .inner .container .lottery_detail dt {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.lottery .inner .container .lottery_detail dt .icon {
+  width: 5em;
+  margin-right: 1em;
+}
+.lottery .inner .container .lottery_detail dt .title {
+  margin: 0;
+}
+.lottery .inner .container .lottery_detail dt .title h2 {
+  font-size: 3em;
+  font-weight: 600;
+  color: var(--green_dark);
+}
+.lottery .inner .container .lottery_detail dd {
+  position: relative;
+  font-weight: 400;
+  font-size: 1.3em;
+  line-height: 1.5;
+}
+.lottery .inner .container .lottery_detail dd .caption {
+  background-color: var(--green_lite);
+  color: #fff;
+  padding: 0.2em 0.8em;
+  border-radius: 99em;
+}
+.lottery .inner .container .lottery_detail dd ~ dd {
+  margin-top: 1em;
+}
+.lottery .inner .container .lottery_detail dd.detail_link {
+  position: relative;
+  width: max-content;
+  color: var(--purple);
+}
+.lottery .inner .container .lottery_detail dd.detail_link a {
+  font-size: 1.2em;
+}
+.lottery .inner .container .lottery_detail dd.detail_link:before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  left: auto;
+  right: -1em;
+  top: 50%;
+  width: 0.5em;
+  height: 0.5em;
+  border: 2px solid var(--purple);
+  border-top: 0;
+  border-left: 0;
+  transform: rotate(-45deg) translateY(-50%);
+}
+.lottery .inner .container .lottery_detail dd.detail_link:after {
+  position: absolute;
+  content: "";
+  width: calc(100% - 0em);
+  height: 3px;
+  background-color: var(--purple);
+  border-radius: 99em;
+  bottom: -0.3em;
+  left: 1em;
+}
+.lottery .inner .container .lottery_prize {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15%;
+}
+.lottery .inner .container .lottery_prize li {
+  width: 50%;
+}
+.lottery .inner .container .lottery_prize li:nth-child(2n) {
+  transform: translateY(25%);
+}
+@media all and (min-width: 769px) {
+  .lottery .inner {
+    width: 70%;
+  }
+  .lottery .inner .container .lottery_detail dd {
+    font-size: 1.7em;
+  }
+}
+@media all and (min-width: 1040px) {
+  .lottery {
+    margin-top: -15%;
+    padding: 13% 0 15%;
+  }
+  .lottery .bg_item {
+    top: -10%;
+  }
+  .lottery .inner {
+    width: 80%;
+    padding: 10% 0;
+  }
+  .lottery .inner .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .lottery .inner .container .lottery_detail {
+    width: 45%;
+    margin-top: 0;
+  }
+  .lottery .inner .container .lottery_detail dd {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .lottery .inner .container .lottery_detail dd .caption {
+    width: max-content;
+    margin-bottom: 0.3em;
+  }
+  .lottery .inner .container .lottery_prize {
+    width: 55%;
+    margin-top: 0;
+    padding-left: 5%;
+  }
+  .lottery .inner .container .lottery_prize li {
+    width: 47%;
+  }
+}
+
+.lottery_notice {
+  background-color: var(--green_lite);
+}
+.lottery_notice .inner {
+  padding: 5%;
+}
+.lottery_notice .inner .content {
+  margin: 0 auto;
+  margin-top: 3em;
+}
+.lottery_notice .inner .content ul li {
+  list-style: decimal;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  text-align: justify;
+}
+.lottery_notice .inner .content ul li > div {
+  margin-top: 0.5em;
+}
+.lottery_notice .inner .content ul li ~ li {
+  margin-top: 1.5em;
+}
+@media all and (min-width: 1040px) {
+  .lottery_notice .inner {
+    padding: 3% 0%;
+  }
+  .lottery_notice .inner .content {
+    width: 70%;
+  }
+}
+
+[data-aos=fade-left] {
+  transform: translate3d(50%, 0, 0);
+}
+
+.winner {
+  margin-top: -1px;
+  padding: 10% 0 0;
+  background-color: var(--green_lite);
+  overflow: hidden;
+}
+.winner .mountain, .winner .grass {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.winner .inner {
+  position: relative;
+}
+.winner .inner .content {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+.winner .inner .content .cm_bobo {
+  margin: 0 auto;
+  width: 90%;
+}
+.winner .inner .content .cm_bobo .pc {
+  display: none;
+}
+.winner .inner .content .cm_rob {
+  width: 30%;
+  margin-left: 56%;
+}
+.winner .inner .content .bg {
+  position: absolute;
+}
+.winner .inner .content .bg._rtop {
+  width: 25%;
+  top: 0.5%;
+  left: 50%;
+  transform: translateX(120%);
+}
+.winner .inner .content .bg._l {
+  width: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-275%, -50%);
+}
+.winner .inner .content .bg._r {
+  width: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(205%, -50%);
+}
+@media all and (min-width: 1040px) {
+  .winner {
+    padding-top: 5%;
+    padding-bottom: 2%;
+  }
+  .winner .inner .content {
+    position: relative;
+  }
+  .winner .inner .content .cm_bobo {
+    width: 80%;
+    max-width: 1155px;
+  }
+  .winner .inner .content .cm_bobo .pc {
+    display: block;
+  }
+  .winner .inner .content .cm_bobo .mb {
+    display: none;
+  }
+  .winner .inner .content .cm_rob {
+    width: 20%;
+    margin-left: 55%;
+    margin-top: 5%;
+  }
+  .winner .inner .content .bg {
+    position: absolute;
+  }
+  .winner .inner .content .bg._rtop {
+    width: 25%;
+    top: 0.5%;
+    left: 50%;
+    transform: translateX(72%);
+  }
+  .winner .inner .content .bg._l {
+    width: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-275%, -50%);
+  }
+  .winner .inner .content .bg._r {
+    width: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(205%, -50%);
+  }
+}
+
+.notice {
+  margin-top: -5%;
+  padding-top: 1px;
+}
+.notice .bg {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.notice .bg:before, .notice .bg:after {
+  position: absolute;
+  content: "";
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  width: 500%;
+  top: 0;
+  left: -200%;
+  background-color: #F5F3B2;
+}
+.notice .bg:after {
+  background: url("../img/texture_100.png") top left/100px;
+  mix-blend-mode: multiply;
+}
+.notice .inner {
+  position: relative;
+}
+.notice .inner .title_icon {
+  position: relative;
+  width: 25%;
+  aspect-ratio: 1/1;
+  padding: 4.5% 7.5%;
+  border-radius: 99em;
+  background-color: #F5F3B2;
+  overflow: hidden;
+  margin-top: -8%;
+}
+.notice .inner .title_icon:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("../img/texture_100.png") repeat center center/100px;
+  mix-blend-mode: multiply;
+}
+.notice .inner .title {
+  position: relative;
+  margin-top: -5%;
+}
+.notice .inner .title h2 {
+  color: var(--green_dark);
+}
+.notice .inner > ul {
+  padding: 5% 8% 10%;
+}
+.notice .inner > ul > li {
+  list-style: decimal;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.notice .inner > ul > li ~ li {
+  margin-top: 0.7em;
+}
+.notice .inner > ul > li dl dd {
+  padding-left: 1.5em;
+}
+@media all and (min-width: 1040px) {
+  .notice .inner .title_icon {
+    width: 13%;
+    padding: 2.5% 4%;
+    margin-top: -5%;
+  }
+  .notice .inner .title {
+    margin-top: -2%;
+  }
+  .notice .inner > ul {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .notice .inner > ul li {
+    line-height: 1.7;
+  }
+  .notice .inner > ul li ~ li {
+    margin-top: 1.5em;
+  }
+}
