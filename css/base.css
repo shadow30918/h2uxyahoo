@@ -15,10 +15,11 @@ html {
   --purple: #4F83C2;
   --green_dark: #018139;
   --green_lite: #9CCD5A;
+  --red_word:#FA835F;
 }
 @media all and (min-width: 769px) {
   html {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 @media all and (min-width: 1040px) {
@@ -386,6 +387,7 @@ header.show nav {
 }
 header.show.scroll {
   background-color: #fff;
+  box-shadow: 0 -10px 20px 0px rgba(0, 0, 0, 0.35);
 }
 header.show.scroll .logo {
   opacity: 1;
@@ -415,6 +417,35 @@ footer ul li {
 @media all and (min-width: 769px) {
   footer {
     font-size: 0.8em;
+  }
+}
+
+.gotop,
+.back {
+  position: fixed;
+  z-index: 5;
+  bottom: 2em;
+  right: 1em;
+  font-size: 1.3em;
+  width: 3em;
+  aspect-ratio: 1/1;
+  border-radius: 99em;
+  text-align: center;
+  align-content: center;
+  background-color: var(--purple);
+  color: #fff;
+}
+@media all and (min-width: 1040px) {
+  .gotop,
+  .back {
+    cursor: pointer;
+    font-size: 1em;
+    right: 3em;
+    bottom: 3em;
+  }
+  .gotop:hover,
+  .back:hover {
+    scale: 1.1;
   }
 }
 
@@ -649,6 +680,9 @@ section .overflow {
 @media all and (min-width: 1040px) {
   .kv.sub {
     aspect-ratio: 3/1;
+  }
+  .kv.sub .inner {
+    transform: translate(-50%, -50%);
   }
   .kv.sub .inner .sub_kv_title {
     height: 5em;
@@ -887,5 +921,106 @@ section .overflow {
   .first_section {
     padding: 12% 0 12%;
     mask: url("../img/index/banner/background_grass.svg") no-repeat top center/cover;
+  }
+}
+
+section:has(.first_section_top) {
+  position: relative;
+  background-color: var(--green_lite);
+}
+section:has(.first_section_top):before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("../img/texture_100.png") repeat center center/100px;
+  mix-blend-mode: multiply;
+}
+section:has(.first_section_top) .bg_item.basic {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+section:has(.first_section_top) .bg_item.basic > div {
+  position: absolute;
+}
+section:has(.first_section_top) .bg_item.basic .robot {
+  width: 6%;
+  bottom: 7%;
+  left: 21%;
+  z-index: 3;
+}
+section:has(.first_section_top) .bg_item.basic .grass_s._01 {
+  width: 5%;
+  bottom: 5%;
+  left: 22%;
+  z-index: 4;
+}
+section:has(.first_section_top) .bg_item.basic .tree_b._01 {
+  width: 3%;
+  bottom: 10%;
+  right: 23%;
+  z-index: 3;
+}
+section:has(.first_section_top) .bg_item.basic .tree_b._02 {
+  width: 2%;
+  top: 40%;
+  left: 13%;
+  z-index: 3;
+}
+section:has(.first_section_top) .bg_item.basic .tree_s._01 {
+  width: 2.5%;
+  top: 35%;
+  right: 5%;
+}
+section:has(.first_section_top) .bg_item.basic .tree_y._01 {
+  width: 3%;
+  top: 25%;
+  left: 3%;
+}
+section:has(.first_section_top) .bg_item.basic .tree_y._02 {
+  width: 1%;
+  top: 10%;
+  right: 30%;
+}
+section:has(.first_section_top) .bg_item.basic .cloud._01 {
+  width: 3%;
+  bottom: 15%;
+  right: 15%;
+}
+section:has(.first_section_top) .first_section_top {
+  position: absolute;
+  width: 100%;
+  height: 1.7em;
+  left: 0;
+  top: 0;
+  background-color: #9CCD5A;
+  mask: url("../img/index/banner/background_grass.svg") no-repeat top center/cover;
+  transform: translateY(calc(-100% + 2px));
+}
+section:has(.first_section_top) .first_section_top:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("../img/texture_100.png") repeat center center/100px;
+  mix-blend-mode: multiply;
+}
+@media all and (min-width: 769px) {
+  section:has(.first_section_top) .first_section_top {
+    height: 2em;
+  }
+}
+@media all and (min-width: 1040px) {
+  section:has(.first_section_top) .first_section_top {
+    height: 4em;
   }
 }
