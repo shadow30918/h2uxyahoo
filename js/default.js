@@ -8,7 +8,7 @@ let page_path = location.pathname;
 
 
 $(function() {
-
+    win_H = $(window).height();
     
     AOS.init();
 
@@ -27,6 +27,26 @@ $(function() {
         $(this).toggleClass("open")
     })
 
+    $(".gotop").click(function(){
+        scroll_t = ($(window).scrollTop() / 2 > 1500)? 1500 :$(window).scrollTop() / 2
+        $("html,body").animate({
+            scrollTop: 0
+        },scroll_t,'swing')
+    })
+
+    $(".back").click(function(){
+        if($(window).scrollTop() / 2 > 1500){
+            scroll_t = 1500;
+            ease = "easeInOutQuint"
+        }else{
+            scroll_t = $(window).scrollTop() / 2;
+            ease = "swing"
+        }
+        $("html,body").animate({
+            scrollTop: $(".category.first_section").offset().top
+        },scroll_t,ease)
+    })
+
     $("nav .collapse_list").click(function(){
         if($(window).width()<1039){
             $(this).find(".sub_list").slideToggle(300)
@@ -41,7 +61,22 @@ $(function() {
         }
     })
 
+    document.getElementById('shareFBbtn').onclick = function() {
+        FB.ui({
+          display: 'popup',
+          method: 'share',
+          href: 'https://campaign.edh.tw/',
+        }, function(response){});
+    }
+    document.getElementById('shareLinebtn').onclick = function() {
+        window.open("https://social-plugins.line.me/lineit/share?url=https://campaign.edh.tw/","line-share","width=500,height=500,top=100,left=50")
+    }
+
 });
+
+$(window).on("load",function(){
+    AOS.init();
+})
 
 $(window).on('scroll', function(){
     
