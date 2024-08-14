@@ -1,13 +1,13 @@
 [
     {
-        "id":"health",
-        "caption":"醫療保健",
-        "icon":"health.svg"
-    },
-    {
         "id":"nutrition",
         "caption":"飲食營養",
         "icon":"nutrition.svg"
+    },
+    {
+        "id":"health",
+        "caption":"醫療保健",
+        "icon":"health.svg"
     },
     {
         "id":"makeup",
@@ -15,13 +15,13 @@
         "icon":"makeup.svg"
     },
     {
-        "id":"sports",
+        "id":"sport",
         "caption":"運動健身",
-        "icon":"sports.svg"
+        "icon":"sport.svg"
     },
     {
-        "id":"tech",
+        "id":"technology",
         "caption":"資訊科技",
-        "icon":"tech.svg"
+        "icon":"technology.svg"
     }
 ]

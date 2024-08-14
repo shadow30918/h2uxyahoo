@@ -1,34 +1,39 @@
-[
-    {
-        "id": "",
-        "category":"health",
-        "photo": "quaker.jpg",
-        "caption": "桂格天地合補",
-        "dtl": "桂格天地合補是台灣推出植物性保健飲品的第一品牌，也已獲得了台灣最多人（230 萬人）使用的好成績。桂格天地合補深信「由內而外調理健康的原理」，並將此信念延伸到產品的每個面向。",
-        "link": "www.yahoo.com.tw"
-    },
-    {
-        "id": "",
-        "category":"health",
-        "photo": "arpai.jpg",
-        "caption": "RTH ERＷＴW",
-        "dtl": "桂格天地合補是台灣推出植物性保健飲品的第一品牌，也已獲得了台灣最多人（230 萬人）使用的好成績。桂格天地合補深信「由內而外調理健康的原理」，並將此信念延伸到產品的每個面向。",
-        "link": "https://www.google.com.tw"
-    },
-    {
-        "id": "",
-        "category":"makeup",
-        "photo": "bailan.jpg",
-        "caption": "ERGNE ERT",
-        "dtl": "asdqqvdw qwe  qweeeerthh badf",
-        "link": ""
-    },
-    {
-        "id": "",
-        "category":"nutrition",
-        "photo": "suntory.jpg",
-        "caption": "EWF PWEF",
-        "dtl": "yjtf swef xxwefwfexx ww",
-        "link": ""
-    }
-]
+{
+    "promotion":[
+        {
+            "id": "",
+            "category":"nutrition",
+            "photo": "5815f57b37000005eac2_b.png",
+            "caption": "台灣人膳食纖維吃不夠！穀物協會推「全穀標章」桂格燕麥獲第一家取證",
+            "dtl": "佳格食品集團於新年來臨之際，率先於2023年底成為臺灣第一間通過「全穀標章驗證」的食品大廠，不僅如此，桂格即沖即食大燕麥片、桂格有機大燕麥片、桂格原片原味大燕麥片三項產品更囊括全穀100驗證編號前三名，顯示對全穀食品推廣積極重視。",
+            "link": "https://www.edh.tw/article/35302"
+        }
+    ],
+    
+    "recommend":[
+        {
+            "id": "",
+            "category":"",
+            "photo": "01.jpg",
+            "caption": "資訊焦慮小心「腦疲乏」失智風險高！專家揭2保健活化腦力、照顧腦細胞",
+            "dtl": "當資訊型社會來臨後，又產生新的匱乏—資訊、時間、資源的供應都不夠用。資訊的公開與氾濫，使得新的經濟形式產生為「資訊經濟」，並且",
+            "link": "https://www.edh.tw/article/27697"
+        },
+        {
+            "id": "",
+            "category":"",
+            "photo": "02.jpg",
+            "caption": "越滑越失眠？這些3C使用習慣天天殘害睡眠，加重頭痛、睡不好！",
+            "dtl": "台灣睡眠醫學學會調查顯示，全台約有10％的人飽受慢性失眠所苦，健保署在2018年的統計也發現，鎮靜安眠類藥物的處方籤，光是1年就超過9.18億顆，不難看出失眠已經成為現代文明病的一員。而除了疾病、心理",
+            "link": "https://www.edh.tw/article/31327"
+        },
+        {
+            "id": "",
+            "category":"",
+            "photo": "03.jpg",
+            "caption": "資訊爆炸時代，大腦「超載」易釀身心病！8個慢生活提案減輕焦慮不再緊繃",
+            "dtl": "好不容易擠出空閒時間，結果又不自覺打開手機、平板，開始追劇、打遊戲，再不然就是確認臉書、IG有沒有新消息，知名身心靈預防醫學專家洛桑加參曾在臉書為文提醒，若把網路上海量的資訊照單全收，",
+            "link": "https://www.edh.tw/article/31327"
+        }
+    ]
+}

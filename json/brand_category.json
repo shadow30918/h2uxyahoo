@@ -1,33 +1,15 @@
 [
     {
         "id":"promotion",
-        "caption":"健康推廣大使",
+        "caption":"健康推廣夥伴",
         "icon":"promotion.svg",
-        "amount": 0
-    },
-    {
-        "id":"tech",
-        "caption":"健康科技類",
-        "icon":"tech.svg",
-        "amount": 0
-    },
-    {
-        "id":"sale",
-        "caption":"零售通路類",
-        "icon":"sale.svg",
-        "amount": 0
+        "amount": 2
     },
     {
         "id":"health",
         "caption":"醫療保健類",
         "icon":"health.svg",
         "amount": 24
-    },
-    {
-        "id":"equipment",
-        "caption":"保健醫療器材",
-        "icon":"equipment.svg",
-        "amount": 20
     },
     {
         "id":"nutrition",
@@ -42,15 +24,34 @@
         "amount": 45
     },
     {
-        "id":"sports",
-        "caption":"運動類",
-        "icon":"sports.svg",
-        "amount": 0
+        "id":"equipment",
+        "caption":"保健醫療器材",
+        "icon":"equipment.svg",
+        "amount": 21
     },
     {
         "id":"makeup",
         "caption":"生活用品暨美妝類",
         "icon":"makeup.svg",
         "amount": 51
+    },
+    {
+        "id":"sport",
+        "caption":"運動類",
+        "icon":"sport.svg",
+        "amount": 54
+    },
+    {
+        "id":"technology",
+        "caption":"健康科技類",
+        "icon":"technology.svg",
+        "amount": 11
+    },
+    {
+        "id":"sale",
+        "caption":"零售通路類",
+        "icon":"sale.svg",
+        "amount": 27
     }
+    
 ]
