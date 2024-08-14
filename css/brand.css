@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .category {
   padding-bottom: 30%;
 }
@@ -1168,19 +1167,6 @@
 }
 .award_wall .inner .award_category#award_promotion .award_sub_category .rank .silver .brand {
   position: relative;
-  text-align: left;
-  padding-left: 3.2em;
-}
-.award_wall .inner .award_category#award_promotion .award_sub_category .rank .silver .brand:before {
-  content: "並列";
-  position: absolute;
-  left: 0.5em;
-  top: -0.25em;
-  padding: 0.3em 0.5em;
-  border-radius: 99em;
-  background-color: var(--green_dark);
-  color: #fff;
-  font-size: 0.8em;
 }
 .award_wall .inner .award_category#award_promotion .award_sub_category .rank .silver .brand ~ .brand {
   margin-top: 0.5em;
@@ -1223,5 +1209,16 @@
   }
   .award_wall .inner .award_category .award_sub_category .rank > li .rank_content {
     font-size: 1em;
+  }
+  .award_wall .inner .award_category#award_promotion .award_sub_category .rank > li.silver {
+    order: 1;
+  }
+  .award_wall .inner .award_category#award_promotion .award_sub_category .rank > li.gold {
+    order: 0;
+    width: 100%;
+    padding: 0 30%;
+  }
+  .award_wall .inner .award_category#award_promotion .award_sub_category .rank > li.bronze {
+    order: 2;
   }
 }
