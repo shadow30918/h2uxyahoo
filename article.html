@@ -6,9 +6,9 @@
 
 	<meta property = "og:type" content="website" />
 	<meta property = "og:title" content="2024健康品牌風雲賞" />
-	<meta property = "og:url" content="">
+	<meta property = "og:url" content="https://campaign.edh.tw/">
 	<meta property = "og:description" content="" >
-	<meta property = "og:image" content="" />
+	<meta property = "og:image" content="https://campaign.edh.tw/img/og-img.jpg" />
 
 	<!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/reset.min.css">
@@ -24,12 +24,29 @@
 	<script src="js/swiper-bundle.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/default.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
 
 	<title>2024健康品牌風雲賞</title>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NHCL7BK');
+    </script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHCL7BK" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <header class="show">
         <div class="logo"><img src="img/header_logo.png" alt="早安健康 x Yahoo"></div>
         
@@ -61,8 +78,8 @@
                 <li class="underLine"></li>
             </ul>
             <ul class="share_list">
-                <li><a href=""><img src="img/share_icon_FB.svg" alt="FB share"></a></li>
-                <li><a href=""><img src="img/share_icon_LINE.svg" alt="Line share"></a></li>
+                <li id="shareFBbtn"><a><img src="img/share_icon_FB.svg" alt="FB share"></a></li>
+                <li id="shareLinebtn"><a ><img src="img/share_icon_LINE.svg" alt="Line share"></a></li>
             </ul>
         </nav>
     </header>
@@ -118,106 +135,9 @@
         <div class="overflow">
             <div class="inner">
                 <div class="title" data-aos="fade-left" data-aos-duration="1000"><span class="icon"><img src="img/article/article_icon.svg"></span><h2>推薦文章</h2></div>
-                <div class="articel_slide swiper" data-aos="zoom-out" data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+                <div class="articel_slide swiper" data-aos="zoom-out" data-aos-easing="ease-out-back" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
                     <div class="slide_wrap swiper-wrapper">
-                        <div class="article_item swiper-slide">
-                            <a href="https://www.edh.tw/article/27697">
-                                <div class="photo">
-                                    <img class="cover" src="img/article/recommend/01.jpg" alt="資訊焦慮小心「腦疲乏」失智風險高！專家揭2保健活化腦力、照顧腦細胞">
-                                    <!-- <div class="category">保健新聞</div> -->
-                                    <!-- <div class="date">
-                                        <div class="icon"><img src="img/item/robotread.svg"></div>
-                                        
-                                    </div> -->
-                                </div>
-                                <div class="article_detail">
-                                    <div class="caption"><h3>資訊焦慮小心「腦疲乏」失智風險高！專家揭2保健活化腦力、照顧腦細胞</h3></div>
-                                    <div class="content"><p>當資訊型社會來臨後，又產生新的匱乏—資訊、時間、資源的供應都不夠用。資訊的公開與氾濫，使得新的經濟形式產生為「資訊經濟」，並且</p></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="article_item swiper-slide">
-                            <a href="https://www.edh.tw/article/31327">
-                                <div class="photo">
-                                    <img class="cover" src="img/article/recommend/02.jpg" alt="越滑越失眠？這些3C使用習慣天天殘害睡眠，加重頭痛、睡不好！">
-                                    <!-- <div class="category">保健新聞</div>
-                                    <div class="date">
-                                        <div class="icon"><img src="img/item/robotread.svg"></div>
-                                        
-                                    </div> -->
-                                </div>
-                                <div class="article_detail">
-                                    <div class="caption"><h3>越滑越失眠？這些3C使用習慣天天殘害睡眠，加重頭痛、睡不好！</h3></div>
-                                    <div class="content"><p>台灣睡眠醫學學會調查顯示，全台約有10％的人飽受慢性失眠所苦，健保署在2018年的統計也發現，鎮靜安眠類藥物的處方籤，光是1年就超過9.18億顆，不難看出失眠已經成為現代文明病的一員。而除了疾病、心理</p></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="article_item swiper-slide">
-                            <a href="https://www.edh.tw/article/30089">
-                                <div class="photo">
-                                    <img class="cover" src="img/article/recommend/03.jpg" alt="資訊爆炸時代，大腦「超載」易釀身心病！8個慢生活提案減輕焦慮不再緊繃">
-                                    <!-- <div class="category">保健新聞</div>
-                                    <div class="date">
-                                        <div class="icon"><img src="img/item/robotread.svg"></div>
-                                        
-                                    </div> -->
-                                </div>
-                                <div class="article_detail">
-                                    <div class="caption"><h3>資訊爆炸時代，大腦「超載」易釀身心病！8個慢生活提案減輕焦慮不再緊繃</h3></div>
-                                    <div class="content"><p>好不容易擠出空閒時間，結果又不自覺打開手機、平板，開始追劇、打遊戲，再不然就是確認臉書、IG有沒有新消息，知名身心靈預防醫學專家洛桑加參曾在臉書為文提醒，若把網路上海量的資訊照單全收，</p></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="article_item swiper-slide">
-                            <a href="https://www.edh.tw/article/27697">
-                                <div class="photo">
-                                    <img class="cover" src="img/article/recommend/01.jpg" alt="資訊焦慮小心「腦疲乏」失智風險高！專家揭2保健活化腦力、照顧腦細胞">
-                                    <!-- <div class="category">保健新聞</div> -->
-                                    <!-- <div class="date">
-                                        <div class="icon"><img src="img/item/robotread.svg"></div>
-                                        
-                                    </div> -->
-                                </div>
-                                <div class="article_detail">
-                                    <div class="caption"><h3>資訊焦慮小心「腦疲乏」失智風險高！專家揭2保健活化腦力、照顧腦細胞</h3></div>
-                                    <div class="content"><p>當資訊型社會來臨後，又產生新的匱乏—資訊、時間、資源的供應都不夠用。資訊的公開與氾濫，使得新的經濟形式產生為「資訊經濟」，並且</p></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="article_item swiper-slide">
-                            <a href="https://www.edh.tw/article/31327">
-                                <div class="photo">
-                                    <img class="cover" src="img/article/recommend/02.jpg" alt="越滑越失眠？這些3C使用習慣天天殘害睡眠，加重頭痛、睡不好！">
-                                    <!-- <div class="category">保健新聞</div>
-                                    <div class="date">
-                                        <div class="icon"><img src="img/item/robotread.svg"></div>
-                                        
-                                    </div> -->
-                                </div>
-                                <div class="article_detail">
-                                    <div class="caption"><h3>越滑越失眠？這些3C使用習慣天天殘害睡眠，加重頭痛、睡不好！</h3></div>
-                                    <div class="content"><p>台灣睡眠醫學學會調查顯示，全台約有10％的人飽受慢性失眠所苦，健保署在2018年的統計也發現，鎮靜安眠類藥物的處方籤，光是1年就超過9.18億顆，不難看出失眠已經成為現代文明病的一員。而除了疾病、心理</p></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="article_item swiper-slide">
-                            <a href="https://www.edh.tw/article/30089">
-                                <div class="photo">
-                                    <img class="cover" src="img/article/recommend/03.jpg" alt="資訊爆炸時代，大腦「超載」易釀身心病！8個慢生活提案減輕焦慮不再緊繃">
-                                    <!-- <div class="category">保健新聞</div>
-                                    <div class="date">
-                                        <div class="icon"><img src="img/item/robotread.svg"></div>
-                                        
-                                    </div> -->
-                                </div>
-                                <div class="article_detail">
-                                    <div class="caption"><h3>資訊爆炸時代，大腦「超載」易釀身心病！8個慢生活提案減輕焦慮不再緊繃</h3></div>
-                                    <div class="content"><p>好不容易擠出空閒時間，結果又不自覺打開手機、平板，開始追劇、打遊戲，再不然就是確認臉書、IG有沒有新消息，知名身心靈預防醫學專家洛桑加參曾在臉書為文提醒，若把網路上海量的資訊照單全收，</p></div>
-                                </div>
-                            </a>
-                        </div>
                     </div>
-                    
                 </div>
                 <div class="controle_btn">
                     <div class="swiper-button-prev"></div>
@@ -245,14 +165,14 @@
         </div>
     </section> -->
 
-
+    <div class="back">back</div>
 
     <footer >
         <ul class="footer_infomation">
             <li>雅虎資訊 版權所有 © 2024 Yahoo! Taiwan All Rights Reserved</li>
             <li>永悅健康 版權所有 © 2024 H2U永悅健康 All Rights Reserved.</li>
             <li>禁止擅自轉貼節錄，本服務由永悅健康提供。</li>
-            <li>聯絡方式｜(02)2912-5566 #8812　charlie.ko@h2u.ai 柯小姐　</li>
+            <li>客服信箱：service@h2u.ai</li>
         </ul>
     </footer>
     

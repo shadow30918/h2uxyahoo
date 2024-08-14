@@ -6,9 +6,9 @@
 
 	<meta property = "og:type" content="website" />
 	<meta property = "og:title" content="2024健康品牌風雲賞" />
-	<meta property = "og:url" content="">
+	<meta property = "og:url" content="https://campaign.edh.tw/">
 	<meta property = "og:description" content="" >
-	<meta property = "og:image" content="" />
+	<meta property = "og:image" content="https://campaign.edh.tw/img/og-img.jpg" />
 
 	<!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/reset.min.css">
@@ -24,12 +24,29 @@
 	<script src="js/swiper-bundle.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/default.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
 
 	<title>2024健康品牌風雲賞</title>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NHCL7BK');
+    </script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHCL7BK" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <header class="show">
         <div class="logo"><img src="img/header_logo.png" alt="早安健康 x Yahoo"></div>
         
@@ -61,8 +78,8 @@
                 <li class="underLine"></li>
             </ul>
             <ul class="share_list">
-                <li><a href=""><img src="img/share_icon_FB.svg" alt="FB share"></a></li>
-                <li><a href=""><img src="img/share_icon_LINE.svg" alt="Line share"></a></li>
+                <li id="shareFBbtn"><a><img src="img/share_icon_FB.svg" alt="FB share"></a></li>
+                <li id="shareLinebtn"><a ><img src="img/share_icon_LINE.svg" alt="Line share"></a></li>
             </ul>
         </nav>
     </header>
@@ -103,24 +120,33 @@
                     
                 </ul>
             </div>
+            <div class="category_item pro" category="promotion"><div class="icon"><img src="img/brand/category_icon/promotion.svg" alt=""></div>健康推廣夥伴</div>
         </div>
     </section>
 
     <section class="page_container">
         <div class="grass"><img src="img/brand/grass.svg"></div>
-        <div class="robot"><img src="img/comming_soon_robot.svg"></div>        
+        <div class="robot"><img src="img/comming_soon_robot.svg"></div>  
+        <div class="page active" category="promotion">
+            <div class="brand_pro">
+                <div class="bg">
+                    <div class="cir"></div>
+                </div>
+                
+            </div>
+        </div>      
     </section>
     
 
     
-
+    <div class="back">back</div>
 
     <footer >
         <ul class="footer_infomation">
             <li>雅虎資訊 版權所有 © 2024 Yahoo! Taiwan All Rights Reserved</li>
             <li>永悅健康 版權所有 © 2024 H2U永悅健康 All Rights Reserved.</li>
             <li>禁止擅自轉貼節錄，本服務由永悅健康提供。</li>
-            <li>聯絡方式｜(02)2912-5566 #8812　charlie.ko@h2u.ai 柯小姐　</li>
+            <li>客服信箱：service@h2u.ai</li>
         </ul>
     </footer>
     

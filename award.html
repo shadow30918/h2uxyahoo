@@ -6,14 +6,14 @@
 
 	<meta property = "og:type" content="website" />
 	<meta property = "og:title" content="2024健康品牌風雲賞" />
-	<meta property = "og:url" content="">
+	<meta property = "og:url" content="https://campaign.edh.tw/">
 	<meta property = "og:description" content="" >
-	<meta property = "og:image" content="" />
+	<meta property = "og:image" content="https://campaign.edh.tw/img/og-img.jpg" />
 
 	<!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/reset.min.css">
 	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/brand.css">
     <link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="css/swiper-bundle.min.css"/>
 
@@ -24,12 +24,29 @@
 	<script src="js/swiper-bundle.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/default.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
 
 	<title>2024健康品牌風雲賞</title>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NHCL7BK');
+    </script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHCL7BK" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <header class="show">
         <div class="logo"><img src="img/header_logo.png" alt="早安健康 x Yahoo"></div>
         
@@ -61,8 +78,8 @@
                 <li class="underLine"></li>
             </ul>
             <ul class="share_list">
-                <li><a href=""><img src="img/share_icon_FB.svg" alt="FB share"></a></li>
-                <li><a href=""><img src="img/share_icon_LINE.svg" alt="Line share"></a></li>
+                <li id="shareFBbtn"><a><img src="img/share_icon_FB.svg" alt="FB share"></a></li>
+                <li id="shareLinebtn"><a ><img src="img/share_icon_LINE.svg" alt="Line share"></a></li>
             </ul>
         </nav>
     </header>
@@ -86,8 +103,34 @@
         
     </section>
 
+    <section class="category first_section">
+        <div class="bg_item basic">
+            <!-- <div class="tree_b _01"><img src="img/item/tree_big.svg" data-aos="fade-left" data-aos-delay="200"></div> -->
+            <div class="tree_b _02"><img src="img/item/tree_big.svg"></div>
+            <div class="tree_s _01"><img src="img/item/tree_small.svg"></div>
+            <!-- <div class="grass_s _01"><img src="img/item/grass_small.svg"></div> -->
+            <div class="tree_y _01"><img src="img/item/tree_y.svg"></div>
+            <div class="tree_y _02"><img src="img/item/tree_y.svg"></div>
+            <!-- <div class="cloud _01"><img src="img/item/Cloud.svg"></div> -->
+        </div>
+        <div class="inner">
+            <div class="category_item pro _top" category="promotion"><div class="icon"><img src="img/brand/category_icon/health_enterprice.svg"></div>健康品牌企業獎</div>
+            <div class="title"><div class="icon"><img src="img/item/search_icon.svg"></div><div class="caption">獎項類別</div></div>
+            <div class="title_mask">
+                <ul class="category_list">
+                    
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="award_wall">
+        <div class="inner" id="award_list"></div>
+    </section>
+
     
-    <section class="comming_soon">
+    <!-- <section class="comming_soon">
         <div class="bg_item">
             <div class="tree_b _01"><img src="img/item/tree_big.svg" data-aos="fade-left" data-aos-delay="200"></div>
             <div class="tree_b _02"><img src="img/item/tree_big.svg"></div>
@@ -101,20 +144,904 @@
             <div class="cm_bobo"><img src="img/comingsoon_bubble.svg" alt="comming soon"></div>
             <div class="cm_rob"><img src="img/comming_soon_robot.svg"></div>
         </div>
-    </section>
+    </section> -->
 
-
+    <div class="back">back</div>
 
     <footer >
         <ul class="footer_infomation">
             <li>雅虎資訊 版權所有 © 2024 Yahoo! Taiwan All Rights Reserved</li>
             <li>永悅健康 版權所有 © 2024 H2U永悅健康 All Rights Reserved.</li>
             <li>禁止擅自轉貼節錄，本服務由永悅健康提供。</li>
-            <li>聯絡方式｜(02)2912-5566 #8812　charlie.ko@h2u.ai 柯小姐　</li>
+            <li>客服信箱：service@h2u.ai</li>
         </ul>
     </footer>
     
 
+    <script>
+
+        award_array = [
+            {
+                id:"promotion",
+                caption:"\\ 2024健康品牌企業獎 /",
+                icon:"health_enterprice.svg",
+                sub_category: [
+                    {
+                        caption:"",
+                        rank:{
+                            gold:{
+                                brand:"佳格食品",
+                                product:""
+                            },
+                            silver:[
+                                {
+                                    brand:"Haleon 英商赫力昂股份有限公司台灣分公司",
+                                    product:""
+                                },
+                                {
+                                    brand:"三得利集團",
+                                    product:""
+                                }
+                            ],
+                            bronze:{
+                                brand:"統一企業",
+                                product:""
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                id:"health",
+                caption:"醫療保健類",
+                icon:"health.svg",
+                sub_category: [
+                    {
+                        caption:"營養補給飲品",
+                        sub_category:"(癌症、糖尿病、腎臟病、肺部疾病)",
+                        rank:{
+                            gold:{
+                                brand:"亞培",
+                                product:"安素"
+                            },
+                            silver:{
+                                brand:"桂格",
+                                product:"完膳"
+                            },
+                            bronze:{
+                                brand:"",
+                                product:"補體素"
+                            }
+                        }
+                    },
+                    {
+                        caption:"腸胃藥",
+                        rank:{
+                            gold:{
+                                brand:"Wakamoto",
+                                product:"若元錠"
+                            },
+                            silver:{
+                                brand:"大正製藥",
+                                product:"欣表飛鳴"
+                            },
+                            bronze:{
+                                brand:"張國周",
+                                product:"強胃散"
+                            }
+                        }
+                    },
+                    {
+                        caption:"止痛藥",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"普拿疼",
+                                product:"止痛系列"
+                            },
+                            silver:{
+                                brand:"斯斯",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"大正製藥",
+                                product:""
+                            }
+                        }
+                    },
+                    {
+                        caption:"綜合型感冒藥",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"普拿疼",
+                                product:"伏冒系列"
+                            },
+                            silver:{
+                                brand:"斯斯",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"大正製藥",
+                                product:"百保能感冒顆粒"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                id:"nutrition",
+                caption:"營養補充品類",
+                icon:"nutrition.svg",
+                sub_category: [
+                    {
+                        caption:"膠原蛋白",
+                        sub_category:"(飲/粉/凍)",
+                        rank:{
+                            gold:{
+                                brand:"天地合補",
+                                product:"膠原蛋白玫瑰四物飲"
+                            },
+                            silver:{
+                                brand:"Suntory 三得利",
+                                product:"蜜露珂娜膠原蛋白"
+                            },
+                            bronze:{
+                                brand:"老行家",
+                                product:"燕窩膠原蛋白"
+                            }
+                        }
+                    },
+                    {
+                        caption:"靈芝/菇、人蔘",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"桂格",
+                                product:"養氣人蔘"
+                            },
+                            silver:{
+                                brand:"桂格",
+                                product:"活靈芝"
+                            },
+                            bronze:{
+                                brand:"白蘭氏",
+                                product:"養蔘飲"
+                            }
+                        }
+                    },
+                    {
+                        caption:"各類(綜合)維他命",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"善存",
+                                product:""
+                            },
+                            silver:{
+                                brand:"合利他命",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"克補",
+                                product:""
+                            }
+                        }
+                    },
+                    {
+                        caption:"燕窩",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"老協珍 鮮燉燕窩",
+                                product:""
+                            },
+                            silver:{
+                                brand:"白蘭氏",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"老行家",
+                                product:""
+                            }
+                        }
+                    },
+                    {
+                        caption:"雞精、滴雞精",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"白蘭氏",
+                                product:""
+                            },
+                            silver:{
+                                brand:"老協珍",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"桂格",
+                                product:""
+                            }
+                        }
+                    },
+                    {
+                        caption:"蜆、蠔精(錠) 、芝麻素",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"白蘭氏",
+                                product:"旭沛蜆精"
+                            },
+                            silver:{
+                                brand:"白蘭氏",
+                                product:"五味子芝麻錠"
+                            },
+                            bronze:{
+                                brand:"Suntory 三得利",
+                                product:"芝麻明EX"
+                            }
+                        }
+                    },
+                    {
+                        caption:"益生菌",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"LP33",
+                                product:"益生菌膠囊"
+                            },
+                            silver:{
+                                brand:"善存",
+                                product:"益生菌"
+                            },
+                            bronze:{
+                                brand:"統一AB",
+                                product:"纖菌素"
+                            }
+                        }
+                    },
+                    {
+                        caption:"關節保健、鈣質補充",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"挺立",
+                                product:"UCII"
+                            },
+                            silver:{
+                                brand:"挺立",
+                                product:"鈣強力錠"
+                            },
+                            bronze:{
+                                brand:"天地合補",
+                                product:"葡萄糖胺飲"
+                            }
+                        }
+                    },
+                    {
+                        caption:"魚油",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"白蘭氏",
+                                product:"深海魚油+蝦紅素"
+                            },
+                            silver:{
+                                brand:"Suntory 三得利",
+                                product:"魚油DHA & EPA+芝麻明E"
+                            },
+                            bronze:{
+                                brand:"大研生醫",
+                                product:"德國頂級魚油"
+                            }
+                        }
+                    },
+                    {
+                        caption:"視力保健",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"善存",
+                                product:"葉黃素"
+                            },
+                            silver:{
+                                brand:"白蘭氏",
+                                product:"黑醋栗+金盞花葉黃素精華飲"
+                            },
+                            bronze:{
+                                brand:"天地合補",
+                                product:"葉黃素功能飲"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                id:"food",
+                caption:"飲品類",
+                icon:"food.svg",
+                sub_category: [
+                    {
+                        caption:"牛乳",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"瑞穗鮮乳",
+                                product:""
+                            },
+                            silver:{
+                                brand:"林鳳營鮮乳",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"光泉鮮乳",
+                                product:""
+                            }
+                        }
+                    },
+                    {
+                        caption:"包裝茶",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"每朝健康",
+                                product:""
+                            },
+                            silver:{
+                                brand:"御茶園",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"茶裏王",
+                                product:""
+                            }
+                        }
+                    },
+                    {
+                        caption:"包裝水",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"台塩海洋鹼性離子水",
+                                product:""
+                            },
+                            silver:{
+                                brand:"PH9.0鹼性離子水",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"統一 H2O純水",
+                                product:""
+                            }
+                        }
+                    },
+                    {
+                        caption:"豆漿、豆奶、米漿、燕麥飲",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"統一",
+                                product:"陽光黃金豆豆漿"
+                            },
+                            silver:{
+                                brand:"愛之味",
+                                product:"純濃燕麥"
+                            },
+                            bronze:{
+                                brand:"桂格",
+                                product:"桂格喝的燕麥"
+                            }
+                        }
+                    },
+                    {
+                        caption:"優酪乳",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"AB優酪乳",
+                                product:""
+                            },
+                            silver:{
+                                brand:"LP33機能優酪乳",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"福樂 自然零優酪乳",
+                                product:""
+                            }
+                        }
+                    },
+                    {
+                        caption:"成人奶粉",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"克寧",
+                                product:""
+                            },
+                            silver:{
+                                brand:"桂格",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"安怡",
+                                product:""
+                            }
+                        }
+                    },
+                    {
+                        caption:"嬰幼兒/兒童奶粉",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"惠氏",
+                                product:"S-26"
+                            },
+                            silver:{
+                                brand:"亞培",
+                                product:"小安素"
+                            },
+                            bronze:{
+                                brand:"美強生",
+                                product:"優生 A+"
+                            }
+                        }
+                    },
+                    {
+                        caption:"油品",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"得意的一天",
+                                product:"義大利橄欖油"
+                            },
+                            silver:{
+                                brand:"得意的一天",
+                                product:"葵花油"
+                            },
+                            bronze:{
+                                brand:"泰山",
+                                product:"純橄欖油"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                id:"equipment",
+                caption:"保健醫療器材",
+                icon:"equipment.svg",
+                sub_category: [
+                    {
+                        caption:"血壓計、體脂計、血糖機",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"OMRON 歐姆龍",
+                                product:""
+                            },
+                            silver:{
+                                brand:"羅氏Accu-Chek",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"TANITA",
+                                product:""
+                            }
+                        }
+                    },
+                    {
+                        caption:"按摩椅",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"OSIM",
+                                product:""
+                            },
+                            silver:{
+                                brand:"輝葉",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"tokuyo",
+                                product:""
+                            }
+                        }
+                    },
+                    {
+                        caption:"隱形眼鏡",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"嬌生Acuvue",
+                                product:""
+                            },
+                            silver:{
+                                brand:"博士倫",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"愛爾康",
+                                product:""
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                id:"makeup",
+                caption:"生活用品暨美妝類",
+                icon:"makeup.svg",
+                sub_category: [
+                    {
+                        caption:"眼藥水",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"博士倫",
+                                product:""
+                            },
+                            silver:{
+                                brand:"樂敦",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"愛爾康",
+                                product:""
+                            }
+                        }
+                    },
+                    {
+                        caption:"口腔清潔用品",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"舒酸定",
+                                product:""
+                            },
+                            silver:{
+                                brand:"高露潔",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"Oral-B 歐樂B",
+                                product:""
+                            }
+                        }
+                    },
+                    {
+                        caption:"居家清潔用品",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"橘子工坊",
+                                product:""
+                            },
+                            silver:{
+                                brand:"Attack 一匙靈",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"魔術靈",
+                                product:""
+                            }
+                        }
+                    },
+                    {
+                        caption:"尿布、成人紙尿褲、衛生棉",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"包大人",
+                                product:""
+                            },
+                            silver:{
+                                brand:"Pampers 幫寶適",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"Kotex 靠得住",
+                                product:""
+                            }
+                        }
+                    },
+                    {
+                        caption:"綠色美妝",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"SHISEIDO 資生堂",
+                                product:""
+                            },
+                            silver:{
+                                brand:"Estée Lauder 雅詩蘭黛",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"綠藤生機",
+                                product:""
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                id:"sale",
+                caption:"零售通路類",
+                icon:"sale.svg",
+                sub_category: [
+                    {
+                        caption:"連鎖通路與綜合型電商",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"康是美",
+                                product:""
+                            },
+                            silver:{
+                                brand:"屈臣氏",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"全聯",
+                                product:""
+                            }
+                        }
+                    },
+                    {
+                        caption:"連鎖藥局",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"大樹 連鎖藥局",
+                                product:""
+                            },
+                            silver:{
+                                brand:"杏一 醫療用品",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"丁丁 連鎖藥妝",
+                                product:""
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                id:"sport",
+                caption:"運動類",
+                icon:"sport.svg",
+                sub_category: [
+                    {
+                        caption:"運動鞋",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"Nike",
+                                product:""
+                            },
+                            silver:{
+                                brand:"Adidas",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"New Balance",
+                                product:""
+                            }
+                        }
+                    },
+                    {
+                        caption:"運動服飾",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"Nike",
+                                product:""
+                            },
+                            silver:{
+                                brand:"Adidas",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"迪卡儂",
+                                product:""
+                            }
+                        }
+                    },
+                    {
+                        caption:"運動補給品",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"寶礦力水得",
+                                product:""
+                            },
+                            silver:{
+                                brand:"舒跑",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"紅牛",
+                                product:""
+                            }
+                        }
+                    },
+                    {
+                        caption:"運動穿戴裝置",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"Apple",
+                                product:""
+                            },
+                            silver:{
+                                brand:"小米",
+                                product:""
+                            },
+                            bronze:{
+                                brand:"三星",
+                                product:""
+                            }
+                        }
+                    },
+                    {
+                        caption:"耐力運動賽事",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"",
+                                product:"臺北 馬拉松"
+                            },
+                            silver:{
+                                brand:"",
+                                product:"新北市 萬金石馬拉松"
+                            },
+                            bronze:{
+                                brand:"",
+                                product:"太魯閣 馬拉松"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                id:"technology",
+                caption:"健康科技類",
+                icon:"technology.svg",
+                sub_category: [
+                    {
+                        caption:"健檢平台",
+                        sub_category:"",
+                        rank:{
+                            gold:{
+                                brand:"振興醫院",
+                                product:"健康管理中心"
+                            },
+                            silver:{
+                                brand:"衛生福利部 台中醫院 ",
+                                product:"健康管理中心"
+                            },
+                            bronze:{
+                                brand:"雙和醫院",
+                                product:"健康管理中心"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+
+        $(function(){
+
+            award_array.forEach(function(award,key){
+
+                //category
+
+                award_category = `
+                    <li class="category_item" category="${award["id"]}" style="--index:${key}">
+                        <div class="icon"><img src="img/brand/category_icon/${award["id"]}.svg"></div><div class="caption">${award["caption"]}</div>
+                    </li>
+                `
+
+                if(award["id"]!="promotion"){
+                    $(".category_list").append(award_category)
+                }
+
+
+                //list
+
+                award_category = ''
+
+                award['sub_category'].forEach(sub_category => {
+
+                    award_rank = ''
+
+                    Object.keys(sub_category['rank']).forEach( rank => {
+
+                        rank_img = (award["id"]=='promotion')? rank+"_enterprice" : rank;
+
+                        if(award["id"]=='promotion' && rank=='silver'){
+                            rank_temp = `
+                            <li class="${rank}">
+                                <div class="rank_pic"><img src="img/award/${rank_img}.png"></div>
+                                <div class="rank_content">
+                                    <div class="brand">【 ${sub_category['rank'][rank][0]['brand']} 】</div>
+                                    <div class="brand">【 ${sub_category['rank'][rank][1]['brand']} 】</div>
+                                </div>
+                            </li>
+                            `
+                        }else{
+                            rank_temp = `
+                            <li class="${rank}">
+                                <div class="rank_pic"><img src="img/award/${rank_img}.png"></div>
+                                <div class="rank_content">
+                                    ${(sub_category['rank'][rank]['brand']!="")?'<div class="brand">【 '+sub_category['rank'][rank]['brand']+' 】</div>':""}
+                                    <div class="product">${sub_category['rank'][rank]['product']}</div>
+                                </div>
+                            </li>
+                            `
+                        }
+                        
+                        award_rank += rank_temp
+                    });
+
+                    sub_category_temp = `
+                        <div class="award_sub_category">
+                            <div class="sub_category_title">${sub_category['caption']}</div>
+                            <div class="sub_category_description">${(sub_category['sub_category']!=undefined)?sub_category['sub_category']:""}</div>
+                            <ul class="rank">
+                                ${award_rank}
+                            </ul>
+                        </div>
+                    `
+                    award_category += sub_category_temp
+                });
+
+                award_frame = `
+                    <div class="award_category" id="award_${award["id"]}">
+                        <div class="category_title" id="award_title_${award["id"]}">
+                            <div class="icon"><img src="img/brand/category_icon/${award["icon"]}"></div>
+                            <div class="intro">\\ 2024健康品牌公布 /</div>
+                            <div class="caption">${award['caption']}</div>
+                        </div>
+                        ${award_category}
+                    </div>
+                `
+                $("#award_list").append(award_frame)
+
+            });
+
+            setTimeout(function(){
+                $(".category_item").addClass("show");
+            },0)
+            setTimeout(function(){
+                $(".category_item").addClass("final")
+            },1500)
+
+
+            $(".category").on("click",".category_item",function(){
+                block_name = "#award_title_"+$(this).attr("category");
+                console.log($(this).attr("category"))
+                $(".category_item").removeClass("active");
+                $(this).addClass("active")
+                AOS.refresh();               
+
+                if($(block_name).offset().top / 2 > 1500){
+                    scroll_t = 1500;
+                    ease = "easeInOutQuint"
+                }else{
+                    scroll_t = $(block_name).offset().top / 2;
+                    ease = "swing"
+                }
+                $("html,body").animate({
+                    scrollTop: $(block_name).offset().top - $("header").height() - 50
+                },scroll_t,ease)
+            })
+
+            
+
+        })
     </script>
 </body>
 
