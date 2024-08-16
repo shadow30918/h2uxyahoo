@@ -280,6 +280,11 @@ section.green_bg::before {
   font-size: 1.5em;
   color: #FF7C54;
 }
+.result_chart .inner .chart .conc .tips {
+  color: #666;
+  font-size: 0.7em;
+  margin-bottom: 0.5em;
+}
 .result_chart .inner .chart .canvas {
   width: 100%;
 }
