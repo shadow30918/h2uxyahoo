@@ -13,7 +13,7 @@
 	<!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/reset.min.css">
 	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/result.css">
     <link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="css/swiper-bundle.min.css"/>
 
@@ -103,7 +103,7 @@
     </section>
 
     
-    <section class="comming_soon">
+    <!-- <section class="comming_soon">
         <div class="bg_item">
             <div class="tree_b _01"><img src="img/item/tree_big.svg" data-aos="fade-left" data-aos-delay="200"></div>
             <div class="tree_b _02"><img src="img/item/tree_big.svg"></div>
@@ -117,8 +117,251 @@
             <div class="cm_bobo"><img src="img/comingsoon_bubble.svg" alt="comming soon"></div>
             <div class="cm_rob"><img src="img/comming_soon_robot.svg"></div>
         </div>
+    </section> -->
+
+
+    <section class="intro green_bg">
+        <div class="inner">
+            <div class="block _01">
+                <div class="title"><div class="icon"><img src="img/result/intro01.svg"></div>調查背景</div>
+                <div class="content">
+                    <ul class="column">
+                        <li><span>調查方式</span>網路問卷調查</li>
+                        <li><span>調查對象</span>台灣13歲以上網路使用者</li>
+                        <li><span>調查時間</span>2024年5月9日至5月31日</li>
+                    </ul>
+                    <ul class="column">
+                        <li><span>有效問卷</span>18,047份</li>
+                        <li><span>企劃單位</span>永悅健康、Yahoo!</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block _02">
+                <div class="title"><div class="icon"><img src="img/result/intro02.svg"></div>樣本</div>
+                <div class="content">
+                    <div class="caption">有效問卷</div>
+                    <div class="val">18,047 <span>份</span></div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <section class="des green_bg">
+        <div class="inner">
+
+            <ul class="tag" id="switch_des">
+                <li class="active">居住縣市</li>
+                <li>性別</li>
+                <li>年齡</li>
+                <li>婚姻</li>
+                <li>職業</li>
+            </ul>
+
+            <div class="block">
+
+                <div class="chart_page" id="chart_page">
+                    <div class="page _01 active">
+                        <canvas id="des_chart_01"></canvas>
+                    </div>
+                    <div class="page _02">
+                        <canvas id="des_chart_02"></canvas>
+                    </div>
+                    <div class="page _03">
+                        <canvas id="des_chart_03"></canvas>
+                    </div>
+                    <div class="page _04">
+                        <canvas id="des_chart_04"></canvas>
+                    </div>
+                    <div class="page _05">
+                        <canvas id="des_chart_05"></canvas>
+                    </div>
+                </div>
+
+                <div class="des_content">
+                    <div class="title">樣本概要說明</div>
+                    <div class="sub_title">參與本調查並屬於有效樣本群的網友輪廓：</div>
+                    <ul>
+                        <li>
+                            <div class="caption">居住縣市</div>
+                            <div class="dtl">
+                                佔比前三居住城市為：<br>
+                                ➊台北市(40%) ➋新北市(20%) ➌台中市(15%)
+                            </div>
+                        </li>
+                        <li>
+                            <div class="caption">性　別</div>
+                            <div class="dtl">
+                                60%為女性、40%為男性。
+                            </div>
+                        </li>
+                        <li>
+                            <div class="caption">年　齡</div>
+                            <div class="dtl">
+                                佔比前三居住城市為：<br>
+                                ➊30-34歲(18%) ➋35-39歲(16%) ➌25-29歲(15%)
+                            </div>
+                        </li>
+                        <li>
+                            <div class="caption">婚　姻</div>
+                            <div class="dtl">
+                                40%為單身，45%為已婚；40%的人有小孩。
+                            </div>
+                        </li>
+                        <li>
+                            <div class="caption">職　業</div>
+                            <div class="dtl">
+                                佔比前三職業為：<br>
+                                ➊白領工作者(21%) ➋ 服務業(14%) ➌ 媒體影視從業人員(12%)
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="result_chart green_bg">
+        <div class="bg"><img src="img/result/bg.png"></div>
+        <div class="inner">
+            <div class="chart">
+                <div class="qus">您目前有沒有使用任何數位／穿戴式裝置，如智慧手錶、健康手環、手機應用程式APP等，來監測自己的健康、身體活動或生理指標? (單選）</div>
+                <div class="conc"><strong>52%</strong> 的網友有在使用數位/穿戴式裝置</div>
+                <div class="canvas _01"><canvas id="Qchart_01"></canvas></div>
+            </div>
+            <div class="chart">
+                <div class="qus">您多常查看您的健康數據? (單選)</div>
+                <div class="conc"><strong>73%</strong> 的網友每天至少查看一次自己的健康數據</div>
+                <div class="canvas _02"><canvas id="Qchart_02"></canvas></div>
+            </div>
+            <div class="chart _full">
+                <div class="qus">您有監測/記錄哪些健康數據? (可複選)</div>
+                <div class="conc"><strong>84%</strong> 的網友會使用數位裝置監測/紀錄 <strong>每日步行步數</strong></div>
+                <div class="canvas _03"><canvas id="Qchart_03"></canvas></div>
+            </div>
+            <div class="chart _full">
+                <div class="qus">您會如何描述您平常使用這些數位健康監測工具的情況? (可複選)</div>
+                <div class="conc"><strong>6成</strong> 以上網友表示自己重度依賴數位健康監測工具。並有 <strong>38%</strong> 網友認為這些數位健康監測工具讓自己更了解身體狀態，提升生活品質。</div>
+                <div class="canvas _04"><canvas id="Qchart_04"></canvas></div>
+            </div>
+            <div class="chart _full">
+                <div class="qus">整體而言，您認為數位3C裝置與社群媒體對您在整體生活品質方面的影響為? (單選)</div>
+                <div class="conc">44歲以下偏向 <strong>正面影響</strong> 比例顯著較高。55歲以上認為沒有什麼影響的比例上升。</div>
+                <div class="canvas _05"><canvas id="Qchart_05"></canvas></div>
+            </div>
+            <div class="chart _full">
+                <div class="qus">整體而言，您認為數位3C裝置與社群媒體對您在人際關係方面的影響為? (單選)</div>
+                <div class="conc"><strong>18-44歲</strong> 的網友認為偏向負面的比例，高於其他年齡層。</div>
+                <div class="canvas _06"><canvas id="Qchart_06"></canvas></div>
+            </div>
+            <div class="chart _full">
+                <div class="qus">整體而言，您認為數位3C裝置與社群媒體對您在心理健康方面的影響為? (單選)</div>
+                <div class="conc"><strong>愈年輕</strong> 的族群，認為 <strong>偏向負面</strong> 的比例愈高。</div>
+                <div class="canvas _07"><canvas id="Qchart_07"></canvas></div>
+            </div>
+            <div class="chart _full">
+                <div class="qus">數位3C裝置與社群媒體對您帶來哪些影響? (可複選，最多選5項) </div>
+                <div class="conc">多數網友認為可以 <strong>拓展生活體驗、吃美食、旅遊等</strong></div>
+                <ul class="list _08">
+                    <li>
+                        <div class="caption">拓展生活體驗、吃美食、旅遊等</div>
+                        <div class="perc">34%</div>
+                    </li>
+                    <li>
+                        <div class="caption">時常一打開就停不下來，忘了時間</div>
+                        <div class="perc">31%</div>
+                    </li>
+                    <li>
+                        <div class="caption">比起外出，假日更喜歡待在家滑手機、瀏覽社群網站</div>
+                        <div class="perc">21%</div>
+                    </li>
+                    <li>
+                        <div class="caption">只要幾天沒有使用，就會覺得焦慮</div>
+                        <div class="perc">20%</div>
+                    </li>
+                    <li>
+                        <div class="caption">讓我多了許多歡樂、心情變好</div>
+                        <div class="perc">20%</div>
+                    </li>
+                    <li>
+                        <div class="caption">經常為了瀏覽訊息，工作、活動被打斷</div>
+                        <div class="perc">19%</div>
+                    </li>
+                    <li>
+                        <div class="caption">常常不小心就買了新東西，無法控制自己的購物欲</div>
+                        <div class="perc">16%</div>
+                    </li>
+                    <li>
+                        <div class="caption">更容易與他人維繫關係、經營人脈</div>
+                        <div class="perc">13%</div>
+                    </li>
+                    <li>
+                        <div class="caption">變得懶得與人面對面交談與互動</div>
+                        <div class="perc">12%</div>
+                    </li>
+                    <li>
+                        <div class="caption">更能表達自己，分享內心真實感受</div>
+                        <div class="perc">9%</div>
+                    </li>
+                    <li>
+                        <div class="caption">讓我覺得有人陪伴，不孤單</div>
+                        <div class="perc">8%</div>
+                    </li>
+                    <li>
+                        <div class="caption">經常覺得自己生活無趣、感到孤單</div>
+                        <div class="perc">8%</div>
+                    </li>
+                    <li>
+                        <div class="caption">讓我更有自信、對自己生活滿意</div>
+                        <div class="perc">8%</div>
+                    </li>
+                    <li>
+                        <div class="caption">認識更多人，拓展社交圈</div>
+                        <div class="perc">8%</div>
+                    </li>
+                    <li>
+                        <div class="caption">時常為了呈現最好的自己，感到壓力</div>
+                        <div class="perc">6%</div>
+                    </li>
+                    <li>
+                        <div class="caption">容易對目前的生活感到悲觀、不滿現況</div>
+                        <div class="perc">6%</div>
+                    </li>
+                    <li>
+                        <div class="caption">不想認識新朋友/建立新的人際關係</div>
+                        <div class="perc">5%</div>
+                    </li>
+                    <li>
+                        <div class="caption">建立更好的形象、讓我變得更受歡迎與受到關注</div>
+                        <div class="perc">4%</div>
+                    </li>
+                    <li>
+                        <div class="caption">使用後經常感到沮喪、不喜歡自己</div>
+                        <div class="perc">3%</div>
+                    </li>
+                    <li>
+                        <div class="caption">其他，請說明</div>
+                        <div class="perc">0%</div>
+                    </li>
+                    <li>
+                        <div class="caption">沒有影響</div>
+                        <div class="perc">1%</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="chart">
+                <div class="qus">您是否有因常使用數位裝置而出現以下不適症狀? (可複選)</div>
+                <div class="conc"><strong>8成2</strong> 的網友，會採取措施讓自己不要過度使用或沈迷3C裝置及社群媒體</div>
+                <div class="canvas _08"><canvas id="Qchart_08"></canvas></div>
+            </div>
+            <div class="chart">
+                <div class="qus">您有採取什麼措施讓小孩不要過度使用或沈迷3C及社群媒體？(可複選)</div>
+                <div class="conc"><strong>7成4的家長</strong> 會採取措施讓小孩不要過適度用或沈迷3C及社群媒體</div>
+                <div class="canvas _09"><canvas id="Qchart_09"></canvas></div>
+            </div>
+        </div>
+    </section>
+    
 
 
     <footer >
@@ -130,7 +373,691 @@
         </ul>
     </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+    <script>
+        let win_w = $(window).width();
+
+        //const Qchart_01 = document.getElementById('Qchart_01');
+
+        $("#switch_des li").click(function(){
+            if(!$(this).hasClass("active")){
+                $("#switch_des li.active, #chart_page .page").removeClass("active")
+                $(this).addClass("active")
+
+                index = $(this).index()+1
+                $("#chart_page .page:nth-child("+index+")").addClass("active")
+            }
+            
+        })
+
+        let des_chart_options = [
+            {
+                name: "#des_chart_01",
+                ratio: [0.7,1.5],
+                position: ["top","left"]
+            },
+            {
+                name: "#des_chart_02",
+                ratio: [0.7,1.5],
+                position: ["top","top"]
+            },
+            {
+                name: "#des_chart_03",
+                ratio: [0.7,1.5],
+                position: ["top","top"]
+            },
+            {
+                name: "#des_chart_04",
+                ratio: [0.7,1.5],
+                position: ["top","top"]
+            },
+            {
+                name: "#des_chart_05",
+                ratio: [0.7,1.3],
+                position: ["top","left"]
+            },
+        ]
+
+        let des_chart = []
+
+        w_set = (win_w<768)?0:1
+
+        des_chart[1] = new Chart($("#des_chart_01"), {
+            type: 'pie',
+            data: {
+                labels: ["基隆市","台北市","新北市","桃園市","新竹市","新竹縣","苗栗縣","台中市","彰化縣","南投縣","雲林縣","嘉義市","嘉義縣","台南市","高雄市","屏東縣","宜蘭縣","花蓮縣","台東縣","澎湖縣","連江縣","金門縣","其他"],
+                datasets: [
+                    {
+                        label: '佔比',
+                        data: [2,14,24,10,2,2,1,12,4,1,2,1,1,7,11,2,1,1,1,0,0,0,0],
+                        backgroundColor: ["#88C35A","#93cdb1","#60c1cf","#5aa2c3","#cb5db5","#34670c","#26d190","#ffa751","#a66cdd","#e96769","#1b5c73","#d2e3fc","#534fa7","#b1c91d","#edd66d","#f35353","#218ed7","#d7b979","#88bfdd","#aaa","#bbb","#ccc","#ddd"],
+                    }
+                ]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: des_chart_options[0]["position"][w_set],
+                        align: "start",
+                    },
+                    title: {
+                        display: false,
+                        text: ''
+                    },
+                },
+                responsive: true,
+                aspectRatio: des_chart_options[0]["ratio"][w_set],
+                maintainAspectRatio: false
+            },
+        });
+
+        des_chart[2] = new Chart($("#des_chart_02"), {
+            type: 'pie',
+            data: {
+                labels: ["男性","女性"],
+                datasets: [
+                    {
+                        label: '佔比',
+                        data: [41,59],
+                        backgroundColor: ["#679BDA","#FFB2C2"],
+                    }
+                ]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: des_chart_options[1]["position"][w_set],
+                        align: "center",
+                    },
+                    title: {
+                        display: false,
+                        text: ''
+                    },
+                },
+                responsive: true,
+                aspectRatio: des_chart_options[1]["ratio"][w_set],
+                maintainAspectRatio: false
+            },
+        });
+
+        des_chart[3] = new Chart($("#des_chart_03"), {
+            type: 'pie',
+            data: {
+                labels: ["13歲以下(不包含13歲)","13-17歲","18-24歲","25-29歲","30-34歲","35-39歲","40-44歲","45-49歲","50-54歲","55-64歲","65歲或以上"],
+                datasets: [
+                    {
+                        label: '佔比',
+                        data: [0,0,1,2,5,8,16,18,18,23,9],
+                        backgroundColor: ["#aaa","#bbb","#cb5db5","#34670c","#88C35A","#93cdb1","#60c1cf","#5aa2c3","#26d190","#ffa751","#dd98b3"],
+                    }
+                ]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: des_chart_options[2]["position"][w_set],
+                        align: "center",
+                    },
+                    title: {
+                        display: false,
+                        text: ''
+                    },
+                },
+                responsive: true,
+                aspectRatio: des_chart_options[2]["ratio"][w_set],
+                maintainAspectRatio: false
+            },
+        });
+
+        des_chart[4] = new Chart($("#des_chart_04"), {
+            type: 'pie',
+            data: {
+                labels: ["單身/未婚，無小孩","單身/未婚，有小孩","已婚，無小孩","已婚，有小孩","其他，無小孩","其他，有小孩"],
+                datasets: [
+                    {
+                        label: '佔比',
+                        data: [32,4,7,54,1,3],
+                        backgroundColor: ["#cfdf9b","#34670c","#88C35A","#b1d750","#26d190","#60c1cf"],
+                    }
+                ]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: des_chart_options[3]["position"][w_set],
+                        align: "center",
+                    },
+                    title: {
+                        display: false,
+                        text: ''
+                    },
+                },
+                responsive: true,
+                aspectRatio: des_chart_options[3]["ratio"][w_set],
+                maintainAspectRatio: false
+            },
+        });
+
+        des_chart[5] = new Chart($("#des_chart_05"), {
+            type: 'pie',
+            data: {
+                labels: ["公司負責人/自營商","公司高層主管/理事/董事","專業人士 (如醫師、律師、建築師、會計師、教授等)","白領工作者 (如軟體工程、業務、行銷、行政、法務、金融等)","技術工作人員 (如技術/工程人員、工廠/生產線作業員)","勞務工作者 (搬家、清潔、快遞、工地施作、農林漁牧等)","服務業 (如餐飲、觀光、百貨零售、美容美髮等)","公眾服務人員 (如公職人員、醫療社福、教職、軍警消防等)","媒體影視從業人員","SOHO族","學生","待業/暫時無工作","家管","已退休，沒有在工作","已退休，但仍有其他工作（兼職、接案或自行創業）","其他"],
+                datasets: [
+                    {
+                        label: '佔比',
+                        data: [3,2,3,21,14,4,10,12,0,1,1,5,10,11,4,0],
+                        backgroundColor: ["#c89cd1","#9077df","#6e9ad9","#457bc7","#56afcf","#43ced3","#26d190","#7ccf66","#7ccf66","#b5c749","#809d36","#efe14a","#edc22d","#e5914d","#e97d66"],
+                    }
+                ]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: des_chart_options[4]["position"][w_set],
+                        align: "start",
+                    },
+                    title: {
+                        display: false,
+                        text: ''
+                    },
+                },
+                responsive: true,
+                aspectRatio: des_chart_options[4]["ratio"][w_set],
+                maintainAspectRatio: false
+            },
+        });
+
+        new Chart($("#Qchart_01"), {
+            type: 'bar',
+            data: {
+                labels: ["有","沒有"],
+                datasets: [
+                    {
+                        label: '男性',
+                        data: [4599,3762],
+                        backgroundColor: "#608ae9",
+                    },
+                    {
+                        label: '女性',
+                        data: [5926,5926],
+                        backgroundColor: "#ed7798",
+                    }
+                ]
+            },
+            options: {
+                plugins: {
+                    title: {
+                        display: true,
+                        text: ''
+                    },
+                },
+                responsive: true,
+                scales: {
+                    x: {
+                        stacked: true,
+                        title: {
+                            display: true
+                        },
+                    },
+                    y: {
+                        stacked: true,
+                        title: {
+                            display: true,
+                            text: '(人數)',
+                            align: "end",
+                            rotate: 90
+                        },
+                        position: 'left',
+                        rotatation: 0,
+                        
+                    }
+                },
+                maintainAspectRatio: false
+            }
+        });
+
+        new Chart($("#Qchart_02"), {
+            type: 'pie',
+            data: {
+                labels: ["一天數次","每天一次","一週一次","兩週一次","一個月一次","三個月一次或更少","想到才會看或幾乎不查看"],
+                datasets: [
+                    {
+                        label: '佔總人數百分比',
+                        data: [28,45,15,2,2,1,8],
+                        backgroundColor: ["#9CCD5A","#BFD877","#91BAE8","#4F83C2","#8CBBBB","#FFDB86","#E07A8F"],
+                    }
+                ]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: ''
+                    },
+                },
+                responsive: true,
+                aspectRatio: 1.5,
+                maintainAspectRatio: false
+            },
+        });
+
+        new Chart($("#Qchart_03"), {
+            type: 'bar',
+            data: {
+                labels: ["每日步行步數","運動時間","運動心率變化","睡眠時間","運動熱量消耗","睡眠品質分析","其他生理數據，例如血氧、心率等","與各項運動搭配的數據紀錄","壓力監測","月經週期","飲食卡路里計算","飲水量紀錄","身體年齡監測","其他"],
+                datasets: [
+                    {
+                        label:"百分比",
+                        data: [84,53,49,44,40,32,29,25,13,12,9,6,6,0],
+                        backgroundColor: ["#88CFCF","#9CCD5A","#E07A8F","#FFDB86","#90B249","#76CCC9","#4F83C2","#8CBBBB","#FFB2C2","#FD96AB","#FFDB86","#91BAE8","#666"],
+                    }
+                ]
+            },
+            options: {
+                plugins: {
+                    legend:{
+                        display:false
+                    },
+                    title: {
+                        display: true,
+                        text: ''
+                    },
+                },
+                responsive: true,
+                scales: {
+                    x: {
+                        stacked: true,
+                        title: {
+                            display: true
+                        },
+                    },
+                    y: {
+                        stacked: true,
+                        title: {
+                            display: false,
+                            text: '',
+                            align: "end",
+                        },
+                        position: 'top',
+                        beginAtZero: true,
+                        min:0,
+                        max:100
+                    }
+                },
+                maintainAspectRatio: false
+            }
+        });
+        
+        new Chart($("#Qchart_04"), {
+            type: 'bar',
+            data: {
+                labels: ["重","中","輕"],
+                datasets: [
+                    {
+                        label: '百分比',
+                        data: [69,14,57],
+                        backgroundColor: ["#FD96AB","#91BAE8","#76CCC9"],
+                    }
+                ]
+            },
+            options: {
+                plugins: {
+                    legend:{
+                        display:false
+                    },
+                    title: {
+                        display: true,
+                        text: ''
+                    },
+                },
+                responsive: true,
+                scales: {
+                    x: {
+                        //stacked: true,
+                        title: {
+                            display: true
+                        },
+                    },
+                    y: {
+                        //stacked: true,
+                        title: {
+                            display: false,
+                            text: '(人數)',
+                            align: "end",
+                            rotate: 90
+                        },
+                        position: 'left',
+                        min:0,
+                        max:100
+                        
+                    }
+                },
+                maintainAspectRatio: false
+            }
+        });
+
+        new Chart($("#Qchart_05"), {
+            type: 'bar',
+            data: {
+                labels: ["17歲以下","18-24歲","25-34歲","35-44歲","45-54歲","55-64歲","65歲以上"],
+                datasets: [
+                    {
+                        label: '偏向負面影響',
+                        //data: [4,29,143,487,767,310,47],
+                        data: [9,14,11,11,12,9,7],
+                        backgroundColor: "#91BAE8",
+                    },
+                    {
+                        label: '沒有什麼影響',
+                        //data: [12,59,338,1284,1982,1204,267],
+                        data: [28,28,26,29,31,35,40],
+                        backgroundColor: "#BFD877",
+                    },
+                    {
+                        label: '偏向正面影響',
+                        //data: [27,122,831,2656,3645,1927,354],
+                        data: [63,58,64,60,57,56,53],
+                        backgroundColor: "#FD96AB",
+                    }
+                ]
+            },
+            options: {
+                plugins: {
+                    legend:{
+                        display:true
+                    },
+                    title: {
+                        display: true,
+                        text: ''
+                    },
+                },
+                responsive: true,
+                scales: {
+                    x: {
+                        stacked: true,
+                        title: {
+                            display: true
+                        },
+                    },
+                    y: {
+                        stacked: true,
+                        title: {
+                            display: false,
+                            text: '(人數)',
+                            align: "end",
+                            rotate: 90
+                        },
+                        position: 'left',
+                        min:0,
+                        max:100
+                    }
+                },
+                maintainAspectRatio: false
+            }
+        });
+
+        new Chart($("#Qchart_06"), {
+            type: 'bar',
+            data: {
+                labels: ["17歲以下","18-24歲","25-34歲","35-44歲","45-54歲","55-64歲","65歲以上"],
+                datasets: [
+                    {
+                        label: '偏向負面影響',
+                        data: [9,11,11,11,9,7,6],
+                        backgroundColor: "#91BAE8",
+                    },
+                    {
+                        label: '沒有什麼影響',
+                        data: [47,46,44,48,51,52,49],
+                        backgroundColor: "#BFD877",
+                    },
+                    {
+                        label: '偏向正面影響',
+                        data: [44,42,45,41,40,41,45],
+                        backgroundColor: "#FD96AB",
+                    }
+                ]
+            },
+            options: {
+                plugins: {
+                    legend:{
+                        display:true
+                    },
+                    title: {
+                        display: true,
+                        text: ''
+                    },
+                },
+                responsive: true,
+                scales: {
+                    x: {
+                        stacked: true,
+                        title: {
+                            display: true
+                        },
+                    },
+                    y: {
+                        stacked: true,
+                        title: {
+                            display: false,
+                            text: '(人數)',
+                            align: "end",
+                            rotate: 90
+                        },
+                        position: 'left',
+                        min:0,
+                        max:100
+                    }
+                },
+                maintainAspectRatio: false
+            }
+        });
+
+        new Chart($("#Qchart_07"), {
+            type: 'bar',
+            data: {
+                labels: ["17歲以下","18-24歲","25-34歲","35-44歲","45-54歲","55-64歲","65歲以上"],
+                datasets: [
+                    {
+                        label: '偏向負面影響',
+                        data: [19,18,17,15,13,9,7],
+                        backgroundColor: "#91BAE8",
+                    },
+                    {
+                        label: '沒有什麼影響',
+                        data: [42,44,37,41,44,47,47],
+                        backgroundColor: "#BFD877",
+                    },
+                    {
+                        label: '偏向正面影響',
+                        data: [40,38,47,44,44,44,46],
+                        backgroundColor: "#FD96AB",
+                    }
+                ]
+            },
+            options: {
+                plugins: {
+                    legend:{
+                        display:true
+                    },
+                    title: {
+                        display: true,
+                        text: ''
+                    },
+                },
+                responsive: true,
+                scales: {
+                    x: {
+                        stacked: true,
+                        title: {
+                            display: true
+                        },
+                    },
+                    y: {
+                        stacked: true,
+                        title: {
+                            display: false,
+                            text: '(人數)',
+                            align: "end",
+                            rotate: 90
+                        },
+                        position: 'left',
+                        min:0,
+                        max:100
+                    }
+                },
+                maintainAspectRatio: false
+            }
+        });
+
+        new Chart($("#Qchart_08"), {
+            type: 'bar',
+            data: {
+                labels: ["定時休息","休息放假時不使用或減少使用3C","留意螢幕使用時間紀錄","關閉社群、通訊軟體訊息通知","使用APP提醒使用時間","其他","沒有採取任何行動"],
+                datasets: [
+                    {
+                        label:"百分比",
+                        data: [40,28,23,23,10,1,18],
+                        backgroundColor: ["#88CFCF","#9CCD5A","#FD96AB","#FFDB86","#889CE2","#4F83C2","#76CCC9"],
+                    }
+                ]
+            },
+            options: {
+                plugins: {
+                    legend:{
+                        display:false
+                    },
+                    title: {
+                        display: true,
+                        text: ''
+                    },
+                },
+                responsive: true,
+                scales: {
+                    x: {
+                        stacked: true,
+                        title: {
+                            display: true
+                        },
+                    },
+                    y: {
+                        stacked: true,
+                        title: {
+                            display: false,
+                            text: '',
+                            align: "end",
+                        },
+                        position: 'top',
+                        beginAtZero: true,
+                        min:0,
+                        max:100
+                    }
+                },
+                maintainAspectRatio: false
+            }
+        });
+
+        new Chart($("#Qchart_09"), {
+            type: 'bar',
+            data: {
+                labels: ["限制使用時間","留意小孩螢幕使用時間紀錄","定時休息","學習之外不使用或減少使用3C","沒有採取任何行動","其他","完全不讓小孩使用"],
+                datasets: [
+                    {
+                        label:"百分比",
+                        data: [34,30,30,23,26,2,2],
+                        backgroundColor: ["#88CFCF","#9CCD5A","#FD96AB","#FFDB86","#889CE2","#4F83C2","#76CCC9"],
+                    }
+                ]
+            },
+            options: {
+                plugins: {
+                    legend:{
+                        display:false
+                    },
+                    title: {
+                        display: true,
+                        text: ''
+                    },
+                },
+                responsive: true,
+                scales: {
+                    x: {
+                        stacked: true,
+                        title: {
+                            display: true
+                        },
+                    },
+                    y: {
+                        stacked: true,
+                        title: {
+                            display: false,
+                            text: '',
+                            align: "end",
+                        },
+                        position: 'top',
+                        beginAtZero: true,
+                        min:0,
+                        max:100
+                    }
+                },
+                maintainAspectRatio: false
+            }
+        });
+
+        $(window).resize(function(){
+            win_w = $(window).width()
+            
+            //updateConfigAsNewObject(testaaa)
+
+            for(i=1; i<=5; i++){
+                chart = des_chart[i]
+                updateConfigAsNewObject(chart,des_chart_options[i-1])
+            }
+            
+        })
+
+        function updateConfigAsNewObject(chart,options) {
+
+            //console.log(chart)
+
+            win_w = $(window).width()
+
+            chart.resize()
+            /*
+            chart.options = {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: false,
+                        text: ''
+                    }
+                },
+                scales: {
+                    x: {
+                        display: true
+                    },
+                    y: {
+                        display: true
+                    }
+                }
+            };
+            */
+            chart.options.plugins.legend.position = (win_w<768)?options["position"][0]:options["position"][1]
+            chart.options.plugins.legend.align = "start"
+            //chart.options.aspectRatio = (win_w<768)?options["ratio"][0]:options["ratio"][1]
+            //chart.options.maintainAspectRatio = false
+            chart.resize()
+            chart.update();
+        }
     </script>
 </body>
 
