@@ -1,7 +1,12 @@
+body {
+  overflow-x: hidden;
+}
+
 section.green_bg {
   background-color: var(--green_lite);
 }
 section.green_bg::before {
+  pointer-events: none;
   position: absolute;
   content: "";
   width: 100%;
@@ -9,6 +14,127 @@ section.green_bg::before {
   top: 0;
   background: url(../img/texture_100.png) top left/100px;
   mix-blend-mode: multiply;
+}
+section .inner {
+  max-width: 1200px;
+}
+
+.report {
+  padding: 10% 0 5%;
+}
+.report .inner {
+  position: relative;
+}
+.report .inner .report_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  row-gap: 1em;
+  padding-left: 1em;
+}
+.report .inner .report_list li {
+  width: 100%;
+  border-radius: 1em;
+  background-color: #fff;
+  padding: 0.5em;
+}
+.report .inner .report_list li a {
+  display: flex;
+  align-items: center;
+}
+.report .inner .report_list li a .icon {
+  flex-shrink: 0;
+  margin: 0 auto;
+  width: 15%;
+  aspect-ratio: 1/1;
+  margin-left: -5%;
+  border-radius: 99em;
+  background-color: #fff;
+  padding: 0.5em;
+}
+.report .inner .report_list li a .content {
+  flex-grow: 1;
+}
+.report .inner .report_list li a .content .caption {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  line-height: 1.35;
+  letter-spacing: 5%;
+  font-size: 1.2em;
+}
+.report .inner .report_list li a .content .more {
+  font-size: 1em;
+  color: #E17244;
+  margin-bottom: -1em;
+  text-align: right;
+  padding: 0 0.5em;
+}
+.report .inner .report_list li.comming {
+  display: none;
+}
+.report .inner .report_list li.comming .icon {
+  opacity: 0;
+}
+.report .inner .report_list li.comming .caption {
+  text-align: center;
+}
+.report .inner .report_list li.comming .more {
+  display: none;
+}
+.report .inner .remark {
+  margin-top: 2em;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #fff;
+  text-align: center;
+  line-height: 1.3;
+}
+.report .inner .remark strong {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+@media all and (min-width: 769px) {
+  .report {
+    padding: 5% 0;
+  }
+  .report .inner .report_list {
+    padding: 0;
+    flex-wrap: nowrap;
+  }
+  .report .inner .report_list li {
+    width: 16%;
+    transition: scale 0.1s ease;
+    padding: 1.33em;
+  }
+  .report .inner .report_list li a {
+    display: block;
+  }
+  .report .inner .report_list li a .icon {
+    width: 60%;
+    margin-left: auto;
+    margin-top: -30%;
+  }
+  .report .inner .report_list li a .content .caption {
+    -webkit-line-clamp: 3;
+    font-size: 1em;
+  }
+  .report .inner .report_list li a .content .more {
+    margin: 0;
+    margin-top: 1em;
+    font-size: 0.8em;
+  }
+  .report .inner .report_list li.comming {
+    display: block;
+  }
+  .report .inner .report_list li:not(.comming):hover {
+    scale: 1.02;
+  }
+  .report .inner .remark br {
+    display: none;
+  }
 }
 
 .intro {
