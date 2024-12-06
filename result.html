@@ -119,6 +119,69 @@
         </div>
     </section> -->
 
+    <section class="report green_bg">
+        <div class="inner">
+            <ul class="report_list">
+                <li>
+                    <a href="https://www.edh.tw/article/36465" target="_blank">
+                        <div class="icon"><img src="img/result/report_icon/icon_1.svg"></div>
+                        <div class="content">
+                            <div class="caption"><h3>《早安健康 x Yahoo奇摩》 發布第9年健康大調查 ：AI數位生活成常態 善用科技促進健康成趨勢</h3></div>
+                            <div class="more">more</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.edh.tw/article/36508" target="_blank">
+                        <div class="icon"><img src="img/result/report_icon/icon_2.svg"></div>
+                        <div class="content">
+                            <div class="caption"><h3>第九屆健康界奧斯卡典禮《2024健康品牌風雲賞》：行動裝置結合AI科技提升健康服務</h3></div>
+                            <div class="more">more</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.edh.tw/article/36781" target="_blank">
+                        <div class="icon"><img src="img/result/report_icon/icon_3.svg"></div>
+                        <div class="content">
+                            <div class="caption"><h3>工作、課業、心理健康...讓數位科技成為最佳工具！建構個人平衡數位生活</h3></div>
+                            <div class="more">more</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.edh.tw/article/36868" target="_blank">
+                        <div class="icon"><img src="img/result/report_icon/icon_4.svg"></div>
+                        <div class="content">
+                            <div class="caption"><h3>數位3C成日常，六成五的網友表示眼睛受不了</h3></div>
+                            <div class="more">more</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="comming">
+                    <a target="_blank">
+                        <div class="icon"><img src="img/result/report_icon/icon_5.svg"></div>
+                        <div class="content">
+                            <div class="caption">(即將發佈)</div>
+                            <div class="more">more</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="comming">
+                    <a target="_blank">
+                        <div class="icon"><img src="img/result/report_icon/icon_6.svg"></div>
+                        <div class="content">
+                            <div class="caption">(即將發佈)</div>
+                            <div class="more">more</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="remark">
+                <h4>2024年健康品牌 <strong>風雲賞調查報告書</strong> ,<br>欲索取請聯繁主辦單位：service@h2u.ai</h4>
+            </div>
+        </div>
+    </section>
 
     <section class="intro green_bg">
         <div class="inner">
@@ -360,7 +423,7 @@
                 <div class="canvas _08"><canvas id="Qchart_08"></canvas></div>
             </div>
             <div class="chart">
-                <div class="qus">10. 您有採取什麼措施讓小孩不要過度使用或沈迷3C及社群媒體？(可複選)</div>
+                <div class="qus">10. 讓小孩不要過度使用/沈迷3c裝置、社群媒體所採取的措施</div>
                 <div class="conc"><strong>7成4的家長</strong> 會採取措施讓小孩不要過適度用或沈迷3C及社群媒體</div>
                 <div class="canvas _09"><canvas id="Qchart_09"></canvas></div>
             </div>
@@ -451,6 +514,13 @@
                         display: false,
                         text: ''
                     },
+                    tooltip: { // hover
+                        callbacks: {
+                            label: function(context) {
+                                return ` ${context.parsed} %`; // 想顯示的內容
+                            }
+                        }
+                    }
                 },
                 responsive: true,
                 aspectRatio: des_chart_options[0]["ratio"][w_set],
@@ -481,6 +551,13 @@
                         display: false,
                         text: ''
                     },
+                    tooltip: { // hover
+                        callbacks: {
+                            label: function(context) {
+                                return ` ${context.parsed} %`; // 想顯示的內容
+                            }
+                        }
+                    }
                 },
                 responsive: true,
                 aspectRatio: des_chart_options[1]["ratio"][w_set],
@@ -511,6 +588,13 @@
                         display: false,
                         text: ''
                     },
+                    tooltip: { // hover
+                        callbacks: {
+                            label: function(context) {
+                                return ` ${context.parsed} %`; // 想顯示的內容
+                            }
+                        }
+                    }
                 },
                 responsive: true,
                 aspectRatio: des_chart_options[2]["ratio"][w_set],
@@ -541,6 +625,13 @@
                         display: false,
                         text: ''
                     },
+                    tooltip: { // hover
+                        callbacks: {
+                            label: function(context) {
+                                return ` ${context.parsed} %`; // 想顯示的內容
+                            }
+                        }
+                    }
                 },
                 responsive: true,
                 aspectRatio: des_chart_options[3]["ratio"][w_set],
@@ -571,6 +662,13 @@
                         display: false,
                         text: ''
                     },
+                    tooltip: { // hover
+                        callbacks: {
+                            label: function(context) {
+                                return ` ${context.parsed} %`; // 想顯示的內容
+                            }
+                        }
+                    }
                 },
                 responsive: true,
                 aspectRatio: des_chart_options[4]["ratio"][w_set],
@@ -584,12 +682,12 @@
                 labels: ["有","沒有"],
                 datasets: [
                     {
-                        label: '男性',
+                        label: '男性人數',
                         data: [4599,3762],
                         backgroundColor: "#608ae9",
                     },
                     {
-                        label: '女性',
+                        label: '女性人數',
                         data: [5926,5926],
                         backgroundColor: "#ed7798",
                     }
@@ -601,6 +699,13 @@
                         display: true,
                         text: ''
                     },
+                    tooltip: { 
+                        callbacks: {
+                            label: function(context) {
+                                return ` ${context.formattedValue}人`; 
+                            }
+                        }
+                    }
                 },
                 responsive: true,
                 scales: {
@@ -613,14 +718,17 @@
                     y: {
                         stacked: true,
                         title: {
-                            display: true,
-                            text: '(人數)',
+                            display: false,
+                            text: '(人)',
                             align: "end",
-                            rotate: 90
                         },
                         position: 'left',
                         rotatation: 0,
-                        
+                        ticks:{
+                            callback: function(value,index,ticks){
+                                return value+'人';
+                            }
+                        }
                     }
                 },
                 maintainAspectRatio: false
@@ -648,6 +756,13 @@
                         display: true,
                         text: ''
                     },
+                    tooltip: { // hover
+                        callbacks: {
+                            label: function(context) {
+                                return ` ${context.parsed} %`; // 想顯示的內容
+                            }
+                        }
+                    }
                 },
                 responsive: true,
                 aspectRatio: 1.5,
@@ -676,6 +791,13 @@
                         display: true,
                         text: ''
                     },
+                    tooltip: { 
+                        callbacks: {
+                            label: function(context) {
+                                return ` ${context.formattedValue}%`; 
+                            }
+                        }
+                    }
                 },
                 responsive: true,
                 scales: {
@@ -695,7 +817,13 @@
                         position: 'top',
                         beginAtZero: true,
                         min:0,
-                        max:100
+                        max:100,
+                        ticks:{
+                            callback: function(value,index,ticks){
+                                //console.log("ddd")
+                                return value+'%';
+                            }
+                        }
                     }
                 },
                 maintainAspectRatio: false
@@ -723,6 +851,13 @@
                         display: true,
                         text: ''
                     },
+                    tooltip: { 
+                        callbacks: {
+                            label: function(context) {
+                                return ` ${context.formattedValue}%`; 
+                            }
+                        }
+                    }
                 },
                 responsive: true,
                 scales: {
@@ -742,8 +877,12 @@
                         },
                         position: 'left',
                         min:0,
-                        max:100
-                        
+                        max:100,
+                        ticks:{
+                            callback: function(value,index,ticks){
+                                return value+'%';
+                            }
+                        }
                     }
                 },
                 maintainAspectRatio: false
@@ -784,6 +923,13 @@
                         display: true,
                         text: ''
                     },
+                    tooltip: { 
+                        callbacks: {
+                            label: function(context) {
+                                return ` ${context.formattedValue}%`; 
+                            }
+                        }
+                    }
                 },
                 responsive: true,
                 scales: {
@@ -803,7 +949,12 @@
                         },
                         position: 'left',
                         min:0,
-                        max:100
+                        max:100,
+                        ticks:{
+                            callback: function(value,index,ticks){
+                                return value+'%';
+                            }
+                        }
                     }
                 },
                 maintainAspectRatio: false
@@ -841,6 +992,13 @@
                         display: true,
                         text: ''
                     },
+                    tooltip: { 
+                        callbacks: {
+                            label: function(context) {
+                                return ` ${context.formattedValue}%`; 
+                            }
+                        }
+                    }
                 },
                 responsive: true,
                 scales: {
@@ -860,7 +1018,12 @@
                         },
                         position: 'left',
                         min:0,
-                        max:100
+                        max:100,
+                        ticks:{
+                            callback: function(value,index,ticks){
+                                return value+'%';
+                            }
+                        }
                     }
                 },
                 maintainAspectRatio: false
@@ -898,6 +1061,13 @@
                         display: true,
                         text: ''
                     },
+                    tooltip: { 
+                        callbacks: {
+                            label: function(context) {
+                                return ` ${context.formattedValue}%`; 
+                            }
+                        }
+                    }
                 },
                 responsive: true,
                 scales: {
@@ -917,7 +1087,12 @@
                         },
                         position: 'left',
                         min:0,
-                        max:100
+                        max:100,
+                        ticks:{
+                            callback: function(value,index,ticks){
+                                return value+'%';
+                            }
+                        }
                     }
                 },
                 maintainAspectRatio: false
@@ -945,6 +1120,13 @@
                         display: true,
                         text: ''
                     },
+                    tooltip: { 
+                        callbacks: {
+                            label: function(context) {
+                                return ` ${context.formattedValue}%`; 
+                            }
+                        }
+                    }
                 },
                 responsive: true,
                 scales: {
@@ -964,7 +1146,12 @@
                         position: 'top',
                         beginAtZero: true,
                         min:0,
-                        max:100
+                        max:100,
+                        ticks:{
+                            callback: function(value,index,ticks){
+                                return value+'%';
+                            }
+                        }
                     }
                 },
                 maintainAspectRatio: false
@@ -992,6 +1179,13 @@
                         display: true,
                         text: ''
                     },
+                    tooltip: { 
+                        callbacks: {
+                            label: function(context) {
+                                return ` ${context.formattedValue}%`; 
+                            }
+                        }
+                    }
                 },
                 responsive: true,
                 scales: {
@@ -1011,7 +1205,12 @@
                         position: 'top',
                         beginAtZero: true,
                         min:0,
-                        max:100
+                        max:100,
+                        ticks:{
+                            callback: function(value,index,ticks){
+                                return value+'%';
+                            }
+                        }
                     }
                 },
                 maintainAspectRatio: false
